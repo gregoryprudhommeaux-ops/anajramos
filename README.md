@@ -30,7 +30,7 @@ Le formulaire envoie la demande à `ana.ramos.cn@gmail.com`. La carte de contact
 
 Code : [github.com/gregoryprudhommeaux-ops/anajramos](https://github.com/gregoryprudhommeaux-ops/anajramos).
 
-Le site est prévu pour [anajramos.com](https://anajramos.com), projet Vercel `anajramos` sur l’équipe `nextstep-services`.
+Le site est en ligne sur [anajramos.com](https://anajramos.com). `www` redirige vers l’apex. Projet Vercel `anajramos`, équipe `nextstep-services`.
 
 ## Choix de publication
 
