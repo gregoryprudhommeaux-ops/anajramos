@@ -52,7 +52,7 @@ export const cn: SiteCopy = {
     footprint: "在中国 19 年；欧洲与拉丁美洲",
     educationLabel: "教育背景",
     education: [
-      { title: "EMSC 创新与创业在读", detail: "巴黎 HEC（2024–2026）" },
+      { title: "Executive Master in Science in Innovation & Entrepreneurship", detail: "巴黎 HEC • 2024年12月至2026年6月" },
       { title: "战略营销研究生文凭", detail: "墨西哥 ITESO" },
       { title: "会计与金融学士", detail: "墨西哥 ITESO" },
     ],

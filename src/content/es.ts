@@ -54,8 +54,8 @@ export const es: SiteCopy = {
     educationLabel: "Formación",
     education: [
       {
-        title: "Candidata – EMSC Innovation & Entrepreneurship",
-        detail: "HEC Paris (2024–2026)",
+        title: "Executive Master in Science in Innovation & Entrepreneurship",
+        detail: "HEC Paris · diciembre 2024 – junio 2026",
       },
       {
         title: "Diplomado en Mercadotecnia Estratégica",
