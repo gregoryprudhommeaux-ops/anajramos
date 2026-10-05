@@ -19,6 +19,17 @@ export function SiteFooter({ locale }: { locale: Locale }) {
           LinkedIn
         </a>
       </p>
+      <p className="mt-3 text-xs">
+        An app developed by{" "}
+        <a
+          href="https://nextstep-suite.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-medium text-white underline decoration-white/40 underline-offset-2 hover:text-brand-gold"
+        >
+          NEXTSTEP SUITE
+        </a>
+      </p>
     </footer>
   );
 }
