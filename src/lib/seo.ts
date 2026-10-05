@@ -40,7 +40,6 @@ export function personJsonLd(locale: Locale) {
     jobTitle: jobTitle(locale),
     url: `${SITE_URL}${routes[locale].home}`,
     email: "ana@nextstep-workshops.com",
-    telephone: "+52-33-3139-1523",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Guadalajara",

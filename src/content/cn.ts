@@ -34,10 +34,8 @@ export const cn: SiteCopy = {
   copied: "已复制",
   contactCards: {
     email: "电子邮箱",
-    phone: "WhatsApp 与手机",
     linkedin: "LinkedIn",
     copyEmail: "复制邮箱",
-    copyPhone: "复制电话",
   },
   home: {
     eyebrow: "高管寻访 • 人才发展 • 国际视角",

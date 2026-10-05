@@ -27,7 +27,7 @@ export function ContactCards({ locale, stacked = false }: { locale: Locale; stac
       className={
         stacked
           ? "grid grid-cols-1 gap-3"
-          : "mx-auto grid max-w-2xl grid-cols-1 gap-4 pt-6 sm:grid-cols-2 md:grid-cols-3"
+          : "mx-auto grid max-w-2xl grid-cols-1 gap-4 pt-6 sm:grid-cols-2"
       }
     >
       <div className={card}>
@@ -44,18 +44,6 @@ export function ContactCards({ locale, stacked = false }: { locale: Locale; stac
         />
       </div>
       <div className={card}>
-        <CardIcon>
-          <path d="M8 5h3l1.2 3-1.8 1.1a10 10 0 0 0 4.5 4.5L16 12l3 1.2v3A1.8 1.8 0 0 1 17.2 18 13.2 13.2 0 0 1 6 6.8 1.8 1.8 0 0 1 8 5Z" />
-        </CardIcon>
-        <h3 className={label}>{copy.contactCards.phone}</h3>
-        <CopyButton
-          text={profile.phoneDisplay}
-          label={copy.contactCards.copyPhone}
-          copiedLabel={copy.copied}
-          className={value}
-        />
-      </div>
-      <div className={`${card} ${stacked ? "" : "sm:col-span-2 md:col-span-1"}`}>
         <CardIcon>
           <path d="M10 13a4 4 0 0 0 5.6.4l2-2a4 4 0 0 0-5.6-5.6l-1.2 1.2" />
           <path d="M14 11a4 4 0 0 0-5.6-.4l-2 2a4 4 0 0 0 5.6 5.6l1.2-1.2" />

@@ -34,10 +34,8 @@ export const fr: SiteCopy = {
   copied: "Copié",
   contactCards: {
     email: "E-mail",
-    phone: "WhatsApp et mobile",
     linkedin: "Profil LinkedIn",
     copyEmail: "Copier l’e-mail",
-    copyPhone: "Copier le téléphone",
   },
   home: {
     eyebrow: "Recherche de cadres • Développement du talent • Regard international",

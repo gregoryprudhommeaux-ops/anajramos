@@ -48,10 +48,8 @@ export type SiteCopy = {
   copied: string;
   contactCards: {
     email: string;
-    phone: string;
     linkedin: string;
     copyEmail: string;
-    copyPhone: string;
   };
   home: {
     eyebrow: string;
