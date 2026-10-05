@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+:root {
+  --background: #faf9f6;
+  --foreground: #222222;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand-gold: #c5a880;
+  --color-brand-dark-blue: #0f1e36;
+  --color-brand-light-blue: #1e3557;
+  --color-brand-slate-blue: #5c7394;
+  --color-brand-ice-blue: #8fa3c1;
+  --color-brand-cream: #faf9f6;
+  --color-brand-charcoal: #222222;
+  --color-brand-light-gray: #f3f4f6;
+  --font-sans: var(--font-jakarta), "Plus Jakarta Sans", sans-serif;
+  --font-serif: var(--font-playfair), Georgia, serif;
+}
+
+body {
+  background: #faf9f6;
+  color: #222222;
+  font-family: var(--font-jakarta), "Plus Jakarta Sans", sans-serif;
+}
+
+::selection {
+  background: #5c7394;
+  color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #faf9f6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8fa3c1;
+  border-radius: 3px;
+}
+
+:focus-visible {
+  outline: 2px solid #1e3557;
+  outline-offset: 3px;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  .tab-pane {
+    display: block !important;
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  .page-break {
+    page-break-before: always;
+  }
+}
