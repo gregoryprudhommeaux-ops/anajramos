@@ -4,7 +4,7 @@ import { getCopy } from "@/content";
 import { localeMeta, localeOrder, pathForLocale, routes, type Locale } from "@/lib/routes";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export function SiteHeader({ locale }: { locale: Locale }) {
   const copy = getCopy(locale);
@@ -117,6 +117,13 @@ export function SiteHeader({ locale }: { locale: Locale }) {
   );
 }
 
+const languageName: Record<Locale, string> = {
+  en: "English",
+  es: "Español",
+  cn: "中文",
+  fr: "Français",
+};
+
 function LanguageSwitch({
   pathname,
   current,
@@ -126,29 +133,76 @@ function LanguageSwitch({
   current: Locale;
   onNavigate?: () => void;
 }) {
+  const detailsRef = useRef<HTMLDetailsElement>(null);
+
+  useEffect(() => {
+    const details = detailsRef.current;
+    if (!details) return;
+
+    const closeOnOutside = (event: PointerEvent) => {
+      if (!details.open) return;
+      if (event.target instanceof Node && details.contains(event.target)) return;
+      details.open = false;
+    };
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") details.open = false;
+    };
+
+    document.addEventListener("pointerdown", closeOnOutside);
+    document.addEventListener("keydown", closeOnEscape);
+    return () => {
+      document.removeEventListener("pointerdown", closeOnOutside);
+      document.removeEventListener("keydown", closeOnEscape);
+    };
+  }, []);
+
   return (
-    <div className="flex items-center gap-2.5 px-1 text-xs font-bold tracking-wider" aria-label="Language">
-      {localeOrder.map((locale) => {
-        const code = localeMeta[locale].code;
-        if (locale === current) {
-          return (
-            <span key={locale} className="border-b-2 border-brand-gold pb-0.5 text-brand-dark-blue" aria-current="true">
-              {code}
-            </span>
-          );
-        }
-        return (
-          <Link
-            key={locale}
-            href={pathForLocale(pathname, locale)}
-            hrefLang={localeMeta[locale].htmlLang}
-            onClick={onNavigate}
-            className="text-brand-slate-blue transition-all hover:text-brand-dark-blue"
-          >
-            {code}
-          </Link>
-        );
-      })}
-    </div>
+    <details ref={detailsRef} className="group relative">
+      <summary className="flex cursor-pointer list-none items-center gap-1.5 rounded-full px-1 py-1 text-xs font-bold tracking-wider text-brand-dark-blue focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-gold [&::-webkit-details-marker]:hidden">
+        <Flag locale={current} />
+        <span>{localeMeta[current].code}</span>
+        <svg
+          viewBox="0 0 12 12"
+          aria-hidden
+          className="h-3 w-3 text-brand-slate-blue transition-transform group-open:rotate-180"
+        >
+          <path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
+        </svg>
+      </summary>
+      <div className="z-50 mt-2 min-w-36 rounded-xl border border-gray-100 bg-white p-1 shadow-lg lg:absolute lg:right-0">
+        {localeOrder
+          .filter((locale) => locale !== current)
+          .map((locale) => (
+            <Link
+              key={locale}
+              href={pathForLocale(pathname, locale)}
+              hrefLang={localeMeta[locale].htmlLang}
+              onClick={() => {
+                if (detailsRef.current) detailsRef.current.open = false;
+                onNavigate?.();
+              }}
+              className="flex items-center gap-2 rounded-lg px-2.5 py-2 text-xs font-semibold tracking-wide text-brand-dark-blue hover:bg-brand-light-gray"
+            >
+              <Flag locale={locale} />
+              <span>{languageName[locale]}</span>
+            </Link>
+          ))}
+      </div>
+    </details>
+  );
+}
+
+const flagEmoji: Record<Locale, string> = {
+  en: "🇬🇧",
+  es: "🇲🇽",
+  cn: "🇨🇳",
+  fr: "🇫🇷",
+};
+
+function Flag({ locale }: { locale: Locale }) {
+  return (
+    <span aria-hidden className="text-base leading-none">
+      {flagEmoji[locale]}
+    </span>
   );
 }
