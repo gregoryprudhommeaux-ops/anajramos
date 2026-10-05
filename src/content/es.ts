@@ -376,7 +376,7 @@ export const es: SiteCopy = {
       email: "nombre@empresa.com",
       location: "Ciudad, país",
       description: "Puesto, mercado y el tipo de apoyo que necesita.",
-      timing: "Este mes, un trimestre concreto, o flexible",
+      timing: "Este mes, un trimestre, o flexible",
     },
     submit: "Enviar consulta",
     sending: "Enviando…",

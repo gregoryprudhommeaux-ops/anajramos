@@ -17,7 +17,7 @@ export function ContactView({ locale }: { locale: Locale }) {
           <ContactForm locale={locale} />
         </div>
         <div className="rounded-3xl border border-brand-gold/30 bg-brand-cream p-6 lg:col-span-2">
-          <ContactCards locale={locale} />
+          <ContactCards locale={locale} stacked />
           <p className="px-2 pt-4 text-center text-xs text-gray-400">{copy.home.based}</p>
         </div>
       </div>

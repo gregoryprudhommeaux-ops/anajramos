@@ -3,15 +3,22 @@ import { getCopy } from "@/content";
 import { profile } from "@/lib/profile";
 import type { Locale } from "@/lib/routes";
 
-export function ContactCards({ locale }: { locale: Locale }) {
+export function ContactCards({ locale, stacked = false }: { locale: Locale; stacked?: boolean }) {
   const copy = getCopy(locale);
   const card =
     "flex flex-col items-center justify-center rounded-xl border border-gray-100 bg-white p-4 text-center shadow-sm";
   const label = "mb-1 text-xs font-medium tracking-wide text-gray-400 uppercase";
-  const value = "text-xs font-semibold text-brand-dark-blue transition-all hover:text-brand-gold";
+  const value =
+    "max-w-full text-xs font-semibold break-all text-brand-dark-blue transition-all hover:text-brand-gold";
 
   return (
-    <div className="mx-auto grid max-w-2xl grid-cols-1 gap-4 pt-6 sm:grid-cols-2 md:grid-cols-3">
+    <div
+      className={
+        stacked
+          ? "grid grid-cols-1 gap-3"
+          : "mx-auto grid max-w-2xl grid-cols-1 gap-4 pt-6 sm:grid-cols-2 md:grid-cols-3"
+      }
+    >
       <div className={card}>
         <span className="mb-2 text-lg text-brand-gold" aria-hidden>
           📧
@@ -36,7 +43,7 @@ export function ContactCards({ locale }: { locale: Locale }) {
           className={value}
         />
       </div>
-      <div className={`${card} sm:col-span-2 md:col-span-1`}>
+      <div className={`${card} ${stacked ? "" : "sm:col-span-2 md:col-span-1"}`}>
         <span className="mb-2 text-lg text-brand-gold" aria-hidden>
           🔗
         </span>
