@@ -2,7 +2,7 @@
 
 Site vitrine d’Ana Ramos-Prudhommeaux, consultante en recherche de cadres et développement du talent. Le design reprend la bio HTML (crème, marine, or, Playfair Display, Plus Jakarta Sans, cartes arrondies). Le contenu suit le brief *Website Strategy & Final Copy* d’octobre 2026.
 
-Anglais sur les URLs principales. Espagnol sur `/es`, en pages séparées.
+Quatre langues, en pages séparées : anglais (EN, URLs principales), espagnol (`/es`), mandarin (`/cn`) et français (`/fr`). Le sélecteur affiche EN, ES, CN et FR.
 
 ## Lancer en local
 

@@ -391,9 +391,9 @@ export const es: SiteCopy = {
       consent: "Confirme la nota de confidencialidad para continuar.",
       generic: "No se pudo confirmar la consulta. Intente de nuevo o escriba directamente por correo.",
     },
-    successTitle: "Su consulta quedó confirmada en esta vista previa.",
+    successTitle: "Su consulta quedó confirmada en esta pantalla.",
     successBody:
-      "Esta versión local mantiene el mensaje en pantalla. La entrega al buzón se conectará cuando el sitio se publique en anajramos.com. Mientras tanto, escriba directamente y Ana responderá en persona.",
+      "Este formulario todavía no envía correo. Escriba directamente y Ana responderá en persona.",
     successDirect: "Escribir a Ana",
     another: "Enviar otra consulta",
   },
@@ -414,8 +414,8 @@ export const es: SiteCopy = {
         body: "Para leer su solicitud y responder. Los datos no se venden ni se usan para listas publicitarias.",
       },
       {
-        heading: "Esta vista previa local",
-        body: "En localhost, el formulario confirma la consulta en pantalla. Todavía no reenvía el mensaje a un buzón. Use el correo de arriba si necesita respuesta ahora.",
+        heading: "Cómo contactar a Ana",
+        body: "El formulario revisa su mensaje en esta página. Todavía no lo reenvía a un buzón. Escriba a ana@nextstep-workshops.com para recibir respuesta.",
       },
       {
         heading: "Cookies y enlaces",

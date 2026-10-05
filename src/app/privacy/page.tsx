@@ -4,7 +4,10 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Privacy | Ana Ramos",
   description: "How Ana Ramos handles contact inquiries sent through anajramos.com.",
-  alternates: { canonical: "/privacy", languages: { en: "/privacy", es: "/es/privacidad" } },
+  alternates: {
+    canonical: "/privacy",
+    languages: { en: "/privacy", es: "/es/privacidad", fr: "/fr/confidentialite", "zh-CN": "/cn/yinsi" },
+  },
 };
 
 export default function Page() {

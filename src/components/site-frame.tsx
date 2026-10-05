@@ -3,7 +3,7 @@
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { getCopy } from "@/content";
-import type { Locale } from "@/lib/routes";
+import { localeMeta, type Locale } from "@/lib/routes";
 import { useEffect, type ReactNode } from "react";
 
 function SetLang({ lang }: { lang: string }) {
@@ -17,8 +17,8 @@ export function SiteFrame({ locale, children }: { locale: Locale; children: Reac
   const copy = getCopy(locale);
 
   return (
-    <>
-      <SetLang lang={locale} />
+    <div className={locale === "cn" ? "font-cn" : undefined}>
+      <SetLang lang={localeMeta[locale].htmlLang} />
       <a
         href="#content"
         className="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-50 focus:rounded-full focus:bg-brand-dark-blue focus:px-4 focus:py-2 focus:text-xs focus:text-white"
@@ -30,6 +30,6 @@ export function SiteFrame({ locale, children }: { locale: Locale; children: Reac
         {children}
       </main>
       <SiteFooter locale={locale} />
-    </>
+    </div>
   );
 }

@@ -1,13 +1,13 @@
-import { routes, SITE_URL } from "@/lib/routes";
+import { localeOrder, routes, SITE_URL, type RouteKey } from "@/lib/routes";
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const entries = (Object.keys(routes.en) as (keyof typeof routes.en)[]).flatMap((key) => {
+  const entries = (Object.keys(routes.en) as RouteKey[]).flatMap((key) => {
     const priority = key === "home" ? 1 : key === "search" ? 0.9 : 0.7;
-    return [
-      { url: `${SITE_URL}${routes.en[key] === "/" ? "" : routes.en[key]}`, priority },
-      { url: `${SITE_URL}${routes.es[key]}`, priority },
-    ];
+    return localeOrder.map((locale) => ({
+      url: routes[locale][key] === "/" ? SITE_URL : `${SITE_URL}${routes[locale][key]}`,
+      priority,
+    }));
   });
 
   return entries.map((entry) => ({

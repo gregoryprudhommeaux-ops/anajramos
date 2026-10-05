@@ -2,12 +2,12 @@
 
 import { getCopy } from "@/content";
 import { profile } from "@/lib/profile";
-import type { Locale } from "@/lib/routes";
+import { localeFromPath } from "@/lib/routes";
 import { usePathname } from "next/navigation";
 
 export default function Error({ reset }: { error: Error & { digest?: string }; reset: () => void }) {
   const pathname = usePathname();
-  const locale: Locale = pathname.startsWith("/es") ? "es" : "en";
+  const locale = localeFromPath(pathname);
   const copy = getCopy(locale);
 
   return (

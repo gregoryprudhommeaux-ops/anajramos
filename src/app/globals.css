@@ -26,6 +26,16 @@ body {
   font-family: var(--font-jakarta), "Plus Jakarta Sans", sans-serif;
 }
 
+.font-cn {
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", "Noto Sans SC",
+    var(--font-jakarta), sans-serif;
+}
+
+.font-cn .font-serif {
+  font-family: "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", "STSong", var(--font-playfair), Georgia,
+    serif;
+}
+
 ::selection {
   background: #5c7394;
   color: #ffffff;

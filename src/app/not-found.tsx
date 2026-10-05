@@ -2,13 +2,13 @@
 
 import { SiteFrame } from "@/components/site-frame";
 import { getCopy } from "@/content";
-import { routes, type Locale } from "@/lib/routes";
+import { localeFromPath, routes } from "@/lib/routes";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 export default function NotFound() {
   const pathname = usePathname();
-  const locale: Locale = pathname.startsWith("/es") ? "es" : "en";
+  const locale = localeFromPath(pathname);
   const copy = getCopy(locale);
   const path = routes[locale];
 

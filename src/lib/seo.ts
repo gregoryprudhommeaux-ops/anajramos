@@ -1,6 +1,6 @@
 import { getCopy } from "@/content";
 import type { SeoKey } from "@/content/types";
-import { routes, SITE_URL, type Locale } from "@/lib/routes";
+import { localeMeta, routes, SITE_URL, type Locale } from "@/lib/routes";
 import type { Metadata } from "next";
 
 export function pageMetadata(locale: Locale, key: SeoKey): Metadata {
@@ -16,6 +16,8 @@ export function pageMetadata(locale: Locale, key: SeoKey): Metadata {
       languages: {
         en: routes.en[key],
         es: routes.es[key],
+        fr: routes.fr[key],
+        "zh-CN": routes.cn[key],
       },
     },
     openGraph: {
@@ -23,7 +25,7 @@ export function pageMetadata(locale: Locale, key: SeoKey): Metadata {
       description: seo.description,
       url: path,
       siteName: "Ana Ramos",
-      locale: locale === "en" ? "en_US" : "es_MX",
+      locale: localeMeta[locale].og,
       type: "website",
     },
   };
@@ -35,10 +37,7 @@ export function personJsonLd(locale: Locale) {
     "@type": "Person",
     name: "Ana Ramos-Prudhommeaux",
     alternateName: "Ana Ramos",
-    jobTitle:
-      locale === "en"
-        ? "Executive Search & Talent Development Consultant"
-        : "Consultora de búsqueda ejecutiva y desarrollo de talento",
+    jobTitle: jobTitle(locale),
     url: `${SITE_URL}${routes[locale].home}`,
     email: "ana@nextstep-workshops.com",
     telephone: "+52-33-3139-1523",
@@ -50,4 +49,11 @@ export function personJsonLd(locale: Locale) {
     sameAs: ["https://www.linkedin.com/in/anajramos"],
     knowsLanguage: ["es", "en", "fr", "zh"],
   };
+}
+
+function jobTitle(locale: Locale) {
+  if (locale === "es") return "Consultora de búsqueda ejecutiva y desarrollo de talento";
+  if (locale === "fr") return "Consultante en recherche de cadres et développement du talent";
+  if (locale === "cn") return "高管搜寻与人才发展顾问";
+  return "Executive Search & Talent Development Consultant";
 }

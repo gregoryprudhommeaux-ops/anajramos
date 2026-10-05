@@ -1,7 +1,7 @@
 "use client";
 
 import { getCopy } from "@/content";
-import { otherLocale, routes, switchPath, type Locale } from "@/lib/routes";
+import { localeMeta, localeOrder, pathForLocale, routes, type Locale } from "@/lib/routes";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -11,7 +11,6 @@ export function SiteHeader({ locale }: { locale: Locale }) {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const path = routes[locale];
-  const other = otherLocale(locale);
   const close = () => setOpen(false);
 
   const links = copy.nav.map((item) => ({
@@ -51,13 +50,7 @@ export function SiteHeader({ locale }: { locale: Locale }) {
             >
               {copy.ctas.collaboration}
             </Link>
-            <Link
-              href={switchPath(pathname)}
-              hrefLang={other}
-              className="rounded-full px-3 py-2 text-xs font-bold tracking-wider text-brand-slate-blue transition-all hover:text-brand-dark-blue"
-            >
-              {copy.otherLocaleLabel}
-            </Link>
+            <LanguageSwitch pathname={pathname} current={locale} />
           </div>
 
           <button
@@ -116,17 +109,46 @@ export function SiteHeader({ locale }: { locale: Locale }) {
             >
               {copy.ctas.collaboration}
             </Link>
-            <Link
-              href={switchPath(pathname)}
-              hrefLang={other}
-              onClick={close}
-              className="text-xs font-bold text-brand-slate-blue"
-            >
-              {copy.otherLocaleLabel}
-            </Link>
+            <LanguageSwitch pathname={pathname} current={locale} onNavigate={close} />
           </div>
         ) : null}
       </div>
     </header>
+  );
+}
+
+function LanguageSwitch({
+  pathname,
+  current,
+  onNavigate,
+}: {
+  pathname: string;
+  current: Locale;
+  onNavigate?: () => void;
+}) {
+  return (
+    <div className="flex items-center gap-2.5 px-1 text-xs font-bold tracking-wider" aria-label="Language">
+      {localeOrder.map((locale) => {
+        const code = localeMeta[locale].code;
+        if (locale === current) {
+          return (
+            <span key={locale} className="border-b-2 border-brand-gold pb-0.5 text-brand-dark-blue" aria-current="true">
+              {code}
+            </span>
+          );
+        }
+        return (
+          <Link
+            key={locale}
+            href={pathForLocale(pathname, locale)}
+            hrefLang={localeMeta[locale].htmlLang}
+            onClick={onNavigate}
+            className="text-brand-slate-blue transition-all hover:text-brand-dark-blue"
+          >
+            {code}
+          </Link>
+        );
+      })}
+    </div>
   );
 }

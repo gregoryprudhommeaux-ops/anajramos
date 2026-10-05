@@ -391,9 +391,9 @@ export const en: SiteCopy = {
       consent: "Please confirm the confidentiality note to continue.",
       generic: "The inquiry could not be confirmed. Please try again, or write directly by email.",
     },
-    successTitle: "Your inquiry is confirmed on this preview.",
+    successTitle: "Your inquiry is confirmed on this screen.",
     successBody:
-      "This local version keeps your message on screen. Inbox delivery will be connected when the site is published on anajramos.com. Until then, write directly and Ana will respond personally.",
+      "This form does not send email yet. Write directly and Ana will respond personally.",
     successDirect: "Write to Ana",
     another: "Send another inquiry",
   },
@@ -414,8 +414,8 @@ export const en: SiteCopy = {
         body: "To read your request and reply. The details are not sold and are not used for advertising lists.",
       },
       {
-        heading: "This local preview",
-        body: "On localhost, the form confirms the inquiry on screen. It does not yet forward the message to an inbox. Use the email address above if you need a reply now.",
+        heading: "Reaching Ana",
+        body: "The form checks your message on this page. It does not forward it to an inbox yet. Write to ana@nextstep-workshops.com for a reply.",
       },
       {
         heading: "Cookies and links",
