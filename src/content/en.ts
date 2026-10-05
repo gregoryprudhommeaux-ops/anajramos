@@ -238,7 +238,7 @@ export const en: SiteCopy = {
       },
       {
         title: "Read the fit",
-        body: "I look at relevant experience, how the person leads, and whether this context is one they can enter.",
+        body: "I look at relevant experience, how the person leads, what they want from the role, and whether this culture is one they can enter.",
       },
       {
         title: "Support the transition",
@@ -256,7 +256,7 @@ export const en: SiteCopy = {
     title: "An experienced partner for executive-search delivery",
     lede: "Flexible, confidential support for executive-search firms working on senior, complex or international assignments.",
     intro:
-      "I work with search firms that need extra capacity, a local read, or someone senior on part of a mandate. I have led searches in international markets. Discretion is not negotiable, and the pace has to be one the client can feel.",
+      "I work with search firms that need extra capacity, a local or cross-cultural read, or someone senior on part of a mandate. I have led searches in international markets. Discretion is not negotiable, and the pace has to be one the client can feel.",
     supportTitle: "Collaboration support",
     support: [
       "Target-company research and talent mapping",
@@ -285,7 +285,7 @@ export const en: SiteCopy = {
     title: "Executive Integration & Talent Development",
     lede: "Focused development support that helps leaders and teams build alignment, capability and confidence in changing or multicultural environments.",
     intro:
-      "Once the offer is signed, the appointment still has to work. The first months decide a large part of that: the relationships, and whether the person can read the culture. I take development work when it belongs to the same mandate.",
+      "Once the offer is signed, the appointment still has to work. The first months decide a large part of that: the relationships, and whether the person can read the culture. I take this work after a hire, and also when a client or a learning partner brings a brief that fits.",
     areasTitle: "Areas of support",
     services: [
       {

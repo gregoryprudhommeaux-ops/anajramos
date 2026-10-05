@@ -239,7 +239,7 @@ export const es: SiteCopy = {
       },
       {
         title: "Leer el ajuste",
-        body: "Veo la experiencia relevante, cómo dirige la persona, y si este contexto es uno al que puede entrar.",
+        body: "Veo la experiencia relevante, cómo dirige la persona, qué busca en el puesto, y si esta cultura es una a la que puede entrar.",
       },
       {
         title: "Acompañar la transición",
@@ -257,7 +257,7 @@ export const es: SiteCopy = {
     title: "Una socia con experiencia para conducir la búsqueda",
     lede: "Apoyo flexible y confidencial para firmas que trabajan asignaciones senior, complejas o internacionales.",
     intro:
-      "Trabajo con firmas que necesitan capacidad extra, una lectura local, o a alguien senior en parte del mandato. He llevado búsquedas en mercados internacionales. La discreción no se negocia, y el ritmo tiene que ser uno que el cliente pueda sentir.",
+      "Trabajo con firmas que necesitan capacidad extra, una lectura local o intercultural, o a alguien senior en parte del mandato. He llevado búsquedas en mercados internacionales. La discreción no se negocia, y el ritmo tiene que ser uno que el cliente pueda sentir.",
     supportTitle: "Apoyo de colaboración",
     support: [
       "Research de empresas objetivo y mapeo de talento",
@@ -286,7 +286,7 @@ export const es: SiteCopy = {
     title: "Integración ejecutiva y desarrollo de talento",
     lede: "Apoyo de desarrollo enfocado para que líderes y equipos construyan alineación, capacidad y confianza en entornos de cambio o multiculturales.",
     intro:
-      "Firmada la oferta, el nombramiento todavía tiene que funcionar. Los primeros meses deciden una parte grande de eso: las relaciones, y si la persona puede leer la cultura. Tomo el trabajo de desarrollo cuando pertenece al mismo mandato.",
+      "Firmada la oferta, el nombramiento todavía tiene que funcionar. Los primeros meses deciden una parte grande de eso: las relaciones, y si la persona puede leer la cultura. Tomo este trabajo después de una contratación, y también cuando un cliente o un socio de aprendizaje trae un encargo que encaja.",
     areasTitle: "Áreas de apoyo",
     services: [
       {

@@ -239,7 +239,7 @@ export const fr: SiteCopy = {
       },
       {
         title: "Lire l’adéquation",
-        body: "Je regarde l’expérience utile, la façon dont la personne dirige, et si ce contexte est un contexte où elle peut entrer.",
+        body: "Je regarde l’expérience utile, la façon dont la personne dirige, ce qu’elle veut du poste, et si cette culture est une culture où elle peut entrer.",
       },
       {
         title: "Accompagner la transition",
@@ -257,7 +257,7 @@ export const fr: SiteCopy = {
     title: "Une partenaire expérimentée pour la conduite de mission",
     lede: "Un appui flexible et confidentiel pour les cabinets qui travaillent sur des mandats seniors, complexes ou internationaux.",
     intro:
-      "Je travaille avec des cabinets qui ont besoin de capacité en plus, d’une lecture locale, ou de quelqu’un de senior sur une partie du mandat. J’ai dirigé des recherches sur des marchés internationaux. La discrétion ne se négocie pas, et le rythme doit être un rythme que le client peut sentir.",
+      "Je travaille avec des cabinets qui ont besoin de capacité en plus, d’une lecture locale ou interculturelle, ou de quelqu’un de senior sur une partie du mandat. J’ai dirigé des recherches sur des marchés internationaux. La discrétion ne se négocie pas, et le rythme doit être un rythme que le client peut sentir.",
     supportTitle: "Appui de collaboration",
     support: [
       "Research d’entreprises cibles et cartographie des talents",
@@ -286,7 +286,7 @@ export const fr: SiteCopy = {
     title: "Intégration des dirigeants et développement du talent",
     lede: "Un appui de développement ciblé pour aider dirigeants et équipes à construire l’alignement, la capacité et la confiance dans des environnements en changement ou multiculturels.",
     intro:
-      "Une fois l’offre signée, la nomination doit encore tenir. Les premiers mois en décident une large part : les relations, et la capacité à lire la culture. Je prends le travail de développement quand il appartient au même mandat.",
+      "Une fois l’offre signée, la nomination doit encore tenir. Les premiers mois en décident une large part : les relations, et la capacité à lire la culture. Je prends ce travail après une embauche, et aussi quand un client ou un partenaire d’apprentissage apporte un besoin qui tient.",
     areasTitle: "Domaines d’appui",
     services: [
       {
