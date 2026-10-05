@@ -40,9 +40,9 @@ export const fr: SiteCopy = {
   home: {
     eyebrow: "Recherche de cadres • Développement du talent • Regard international",
     headline:
-      "Recherche de cadres pour des postes seniors et complexes, avec une compréhension plus fine du leadership, de la culture et de l’intégration.",
+      "Recherche de cadres pour des postes seniors et complexes, y compris la façon dont le dirigeant va prendre son poste.",
     supporting:
-      "J’aide les entreprises et les partenaires d’executive search à identifier le bon talent pour des missions critiques, à lire des marchés complexes et à accompagner les dirigeants lorsqu’ils prennent un nouveau poste. Avec une expérience en Asie, en Amérique latine et en Europe, j’apporte une exécution rigoureuse, une intelligence culturelle et une approche pratique, centrée sur les personnes.",
+      "Les entreprises et les cabinets me demandent de mener la mission : le marché, les candidats, les conversations. Si la personne doit arriver dans un autre pays ou une autre culture, je peux rester les premiers mois. L’essentiel de cette pratique s’est construit en Chine, puis en Asie, en Amérique latine et en Europe.",
     credibility: [
       "Plus de 20 ans en recherche de cadres, développement du leadership et affaires internationales",
       "Expérience en Chine, en Asie, en Amérique latine et en Europe",
@@ -71,27 +71,27 @@ export const fr: SiteCopy = {
       "Recherche de cadres, conduite de mission, cartographie de talents, intégration de dirigeants, leadership interculturel",
     languagesLabel: "Langues",
     languages:
-      "Espagnol (langue maternelle) • Anglais (professionnel complet) • Français (conversationnel) • Mandarin (conversationnel)",
+      "Espagnol (langue maternelle) • Anglais (maîtrise professionnelle) • Français (conversationnel) • Mandarin (conversationnel)",
     supportTitle: "Comment je peux vous aider",
     supportNote:
-      "La recherche de cadres est le point d’entrée commercial. Le développement du talent renforce l’intégration et l’impact du leadership une fois le talent identifié ou recruté.",
+      "La plupart des clients commencent par une recherche. Le développement du talent intervient quand la personne doit s’installer dans le poste.",
     services: [
       {
         key: "search",
         title: "Recherche de cadres et conduite de mission",
-        body: "Appui pour des postes de direction générale, de direction et de spécialistes critiques : stratégie de recherche, cartographie de marché, recherche de candidats, approche, évaluation préliminaire et conduite de bout en bout.",
+        body: "Postes de direction générale, de direction et spécialistes critiques : le brief, la carte, l’approche, une première évaluation, et la conduite de la mission.",
         cta: "Voir la recherche de cadres",
       },
       {
         key: "collaboration",
         title: "Collaboration avec les cabinets",
-        body: "Appui expérimenté et confidentiel pour les cabinets qui ont besoin de capacité de research, de cartographie, d’approche candidats, d’évaluation ou de conduite de mission sur des mandats seniors et complexes.",
+        body: "De la capacité confidentielle pour les cabinets : research, cartographie, conversations avec les candidats, évaluation, ou conduite d’un mandat senior.",
         cta: "Travailler ensemble",
       },
       {
         key: "talent",
         title: "Intégration des dirigeants et développement du talent",
-        body: "Appui ciblé pour l’intégration, le leadership interculturel, le coaching, les assessments, l’alignement d’équipe et les expériences de développement facilitées.",
+        body: "Après la décision : intégration, leadership interculturel, coaching, assessments, et travail avec l’équipe.",
         cta: "Voir le développement du talent",
       },
     ],
@@ -99,11 +99,11 @@ export const fr: SiteCopy = {
     practiceTitle: "Les décisions de talent façonnent les résultats.",
     practice: [
       "La bonne nomination peut accélérer une entreprise. La mauvaise peut créer un coût évitable, de la perturbation et une perte d’élan. J’accompagne les organisations et les cabinets sur des missions seniors et complexes, avec une expertise de recherche, une lecture du marché, une évaluation des candidats et un regard interculturel.",
-      "Mon travail repose sur la discrétion, le jugement et une compréhension claire du versant humain de la performance — de l’identification du bon dirigeant jusqu’à une intégration réussie après l’embauche.",
+      "Le travail tient à la discrétion et au jugement. Je peux rester de la liste courte jusqu’aux premiers mois, quand la mission le demande.",
     ],
     calloutTitle: "De la nomination à une prise de poste réussie",
     callout:
-      "Le regard interculturel et l’intégration du dirigeant accompagnent la recherche. J’aide les organisations et les partenaires à relier la décision de recrutement aux conditions dont un dirigeant a besoin dans les premiers mois : alignement des parties prenantes, culture et chemin d’impact clair.",
+      "La recherche et la prise de poste sont le même sujet. Je relie la décision d’embauche aux premiers mois : avec qui le dirigeant doit s’aligner, et ce que la culture va lui demander.",
     tabs: [
       {
         id: "approach",
@@ -120,7 +120,7 @@ export const fr: SiteCopy = {
           },
           {
             title: "Après l’offre",
-            body: "Une compréhension pratique de la transition, de la culture, du comportement de leadership et de l’intégration d’équipe.",
+            body: "Ce que la transition demande à un dirigeant : la culture, et l’équipe qu’il rejoint.",
           },
           {
             title: "Mode d’intervention flexible",
@@ -183,7 +183,7 @@ export const fr: SiteCopy = {
         role: "Associée",
         dates: "2025 – aujourd’hui",
         place: "OPNRGame • Hong Kong et Amérique latine",
-        body: "Facilitation de la confiance, de la transparence et du leadership d’équipe par des expériences d’apprentissage d’entreprise gamifiées, appuyées sur les neurosciences.",
+        body: "Travail d’associée sur la confiance et le leadership entre équipes, par un apprentissage d’entreprise gamifié, appuyé sur les neurosciences.",
       },
       {
         role: "Fondatrice et directrice",
@@ -195,7 +195,7 @@ export const fr: SiteCopy = {
         role: "Directrice générale – bureau de Shanghai",
         dates: "2004 – 2013",
         place: "AIMS International – Human Capital Partners China",
-        body: "Direction de la recherche de cadres en Grande Chine, avec des placements de dirigeants et de directeurs dans l’industrie, la logistique, la manufacture et les biens de consommation.",
+        body: "J’ai dirigé la recherche de cadres depuis le bureau de Shanghai. Placements de direction générale et de direction dans l’industrie, la logistique, la manufacture et les biens de consommation, en Grande Chine.",
       },
     ],
     sectorsTitle: "Une expérience dans des environnements d’affaires complexes",
@@ -209,9 +209,9 @@ export const fr: SiteCopy = {
   search: {
     eyebrow: "Pratique principale",
     title: "Recherche de cadres et conduite de mission",
-    lede: "Un appui pratique et rigoureux pour des recrutements seniors, complexes et critiques pour l’entreprise.",
+    lede: "Un appui concret pour des recrutements seniors, complexes et critiques pour l’entreprise.",
     intro:
-      "La recherche de cadres ne consiste pas seulement à identifier des profils qualifiés. Elle demande une compréhension claire du défi business, du contexte de leadership, du marché, du vivier de candidats et des conditions d’une réussite durable. J’aide les entreprises et les partenaires de recherche à transformer un besoin critique en un processus de recherche efficace et bien tenu.",
+      "Une recherche senior part du problème de l’entreprise, puis du marché et des personnes qui pourraient tenir le poste. Je mène ce processus pour des entreprises et pour des cabinets, et je peux rester pour ce dont le nouveau dirigeant a besoin afin de durer.",
     supportTitle: "Ce que j’accompagne",
     support: [
       "Recherches de direction générale, de direction et de leadership fonctionnel senior",
@@ -238,8 +238,8 @@ export const fr: SiteCopy = {
         body: "J’approche les candidats de façon professionnelle et confidentielle, avec une compréhension claire de l’opportunité.",
       },
       {
-        title: "Évaluer l’adéquation au-delà du CV",
-        body: "Je regarde l’expérience utile, les comportements de leadership, la motivation, le contexte culturel et la préparation à la mission.",
+        title: "Lire l’adéquation",
+        body: "Je regarde l’expérience utile, la façon dont la personne dirige, et si ce contexte est un contexte où elle peut entrer.",
       },
       {
         title: "Accompagner la transition",
@@ -257,12 +257,12 @@ export const fr: SiteCopy = {
     title: "Une partenaire expérimentée pour la conduite de mission",
     lede: "Un appui flexible et confidentiel pour les cabinets qui travaillent sur des mandats seniors, complexes ou internationaux.",
     intro:
-      "Je collabore avec des cabinets de recherche de cadres qui ont besoin d’une capacité fiable, d’un regard local ou interculturel, ou d’un appui expérimenté à des étapes clés d’une mission. Ayant dirigé et livré des recherches sur des marchés internationaux, je mesure l’importance de la qualité, du rythme, de la discrétion et d’une expérience client constante.",
+      "Je travaille avec des cabinets qui ont besoin de capacité en plus, d’une lecture locale, ou de quelqu’un de senior sur une partie du mandat. J’ai dirigé des recherches sur des marchés internationaux. La discrétion ne se négocie pas, et le rythme doit être un rythme que le client peut sentir.",
     supportTitle: "Appui de collaboration",
     support: [
       "Research d’entreprises cibles et cartographie des talents",
       "Identification de candidats et constitution de long list",
-      "Approche et engagement des candidats",
+      "Approche des candidats",
       "Intelligence de marché et lecture du marché local",
       "Entretiens préliminaires et appui à l’évaluation",
       "Coordination de projet et conduite de mission",
@@ -275,7 +275,7 @@ export const fr: SiteCopy = {
       "Respect des accords de non-sollicitation et des protocoles du projet",
       "Communication claire, collaboration réactive et livrables définis",
       "Une approche qui protège la relation et la marque du cabinet partenaire",
-      "Un appui flexible, d’un workstream de research jusqu’à une conduite de mission plus large",
+      "Un appui flexible, d’un volet de research défini jusqu’à une part plus large de la mission",
     ],
     ctaTitle: "Explorer une collaboration",
     ctaBody:
@@ -286,7 +286,7 @@ export const fr: SiteCopy = {
     title: "Intégration des dirigeants et développement du talent",
     lede: "Un appui de développement ciblé pour aider dirigeants et équipes à construire l’alignement, la capacité et la confiance dans des environnements en changement ou multiculturels.",
     intro:
-      "Les décisions de talent ne s’arrêtent pas quand un candidat accepte l’offre. Les premiers mois dans le poste, la qualité des relations et la capacité à naviguer la culture peuvent décider si une nomination délivre la valeur attendue. J’apporte un appui de développement ciblé aux personnes, aux dirigeants et aux équipes lorsque c’est pertinent pour le contexte de l’entreprise.",
+      "Une fois l’offre signée, la nomination doit encore tenir. Les premiers mois en décident une large part : les relations, et la capacité à lire la culture. Je prends le travail de développement quand il appartient au même mandat.",
     areasTitle: "Domaines d’appui",
     services: [
       {
@@ -316,16 +316,16 @@ export const fr: SiteCopy = {
     ],
     engagementTitle: "Comment se passe l’intervention",
     engagement:
-      "Ces services sont dessinés autour du besoin de l’organisation, pas d’un modèle fixe. Je peux travailler directement avec un client ou comme facilitatrice, coach ou consultante associée, via des partenaires de formation et de développement de confiance.",
+      "Je construis le travail selon ce dont l’organisation a besoin. Je peux travailler directement avec un client, ou comme facilitatrice, coach ou consultante associée, via des partenaires d’apprentissage de confiance.",
     ctaTitle: "Explorer un appui en développement du talent",
   },
   about: {
     eyebrow: "Parcours",
     title: "À propos d’Ana Ramos-Prudhommeaux",
-    lede: "Recherche de cadres, développement du leadership et expertise interculturelle, construits sur plus de deux décennies de travail international.",
+    lede: "Recherche de cadres et travail de leadership, à partir de plus de vingt ans de missions internationales.",
     intro: [
-      "Je suis consultante indépendante à l’intersection de la recherche de cadres, du développement du leadership et des affaires internationales. Mon travail s’appuie sur plus de 20 ans d’accompagnement d’organisations, de dirigeants et de décisions de talent en Chine, en Asie, en Amérique latine et en Europe.",
-      "Plus tôt dans ma carrière, j’ai eu des responsabilités de direction en recherche de cadres en Grande Chine, puis j’ai fondé et dirigé un cabinet au service de multinationales en Asie. Aujourd’hui, depuis ma pratique indépendante et des réseaux de partenaires choisis, j’accompagne des missions de recherche, des initiatives talent, du coaching et des expériences d’apprentissage facilité pour des organisations qui traversent croissance, changement et complexité interculturelle.",
+      "Je suis consultante indépendante. La recherche est le cœur de la pratique. Le développement du leadership est à côté. Les années se sont passées en Chine, puis en Asie, en Amérique latine et en Europe.",
+      "J’ai dirigé la recherche de cadres en Grande Chine, puis fondé une pratique de conseil pour des multinationales en Asie. Aujourd’hui je prends des missions de recherche, du coaching et de l’apprentissage facilité, y compris via quelques réseaux de partenaires, quand une organisation fait face à une croissance, à un changement, ou à un recrutement transfrontalier.",
     ],
     snapshotTitle: "Parcours en bref",
     snapshot: [
@@ -345,13 +345,13 @@ export const fr: SiteCopy = {
     ],
     internationalTitle: "Regard international",
     international:
-      "Après avoir vécu et travaillé de nombreuses années en Chine, et collaboré sur des marchés internationaux, j’apporte un regard pratique sur la façon dont la culture influence le leadership, la confiance, la communication, la décision et l’intégration du talent. Ce regard sert autant le travail de recherche que le travail de développement, surtout lorsque les organisations opèrent au-delà des frontières.",
+      "J’ai vécu et travaillé en Chine pendant de nombreuses années, et je travaille encore sur plusieurs marchés. La culture change la façon dont les gens font confiance, décident, et accueillent un nouveau dirigeant. Cela compte sur une recherche, et de nouveau dans les premiers mois, surtout quand l’entreprise opère d’un pays à l’autre.",
     ctaTitle: "Voyons comment je peux aider",
   },
   contact: {
     eyebrow: "Collaborer et échanger",
     title: "Commençons par le contexte de l’entreprise.",
-    lede: "Que vous travailliez sur une recherche senior, que vous cherchiez un appui de delivery ou que vous exploriez un besoin de développement, partagez quelques éléments. Je répondrai personnellement et de façon confidentielle.",
+    lede: "Que vous travailliez sur une recherche senior, que vous cherchiez un appui pour la mener, ou un besoin de développement, indiquez quelques éléments. Je répondrai personnellement, et de façon confidentielle.",
     fields: {
       name: "Nom",
       company: "Entreprise",
@@ -434,7 +434,7 @@ export const fr: SiteCopy = {
     collaboration: {
       title: "Research et conduite de mission | Ana Ramos",
       description:
-        "Research confidentiel, cartographie, approche de candidats et appui de delivery pour des cabinets et des missions complexes.",
+        "Research confidentiel, cartographie, approche de candidats et appui pour mener la mission, pour des cabinets et des missions complexes.",
     },
     talent: {
       title: "Intégration des dirigeants et développement du talent | Ana Ramos",

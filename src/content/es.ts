@@ -40,9 +40,9 @@ export const es: SiteCopy = {
   home: {
     eyebrow: "Búsqueda ejecutiva • Desarrollo de talento • Perspectiva internacional",
     headline:
-      "Búsqueda ejecutiva para puestos senior y complejos, con una comprensión más profunda del liderazgo, la cultura y la integración.",
+      "Búsqueda ejecutiva para puestos senior y complejos, incluido cómo va a arrancar el líder.",
     supporting:
-      "Ayudo a empresas y a socios de búsqueda ejecutiva a identificar el talento adecuado para asignaciones críticas, a navegar mercados complejos y a acompañar a los líderes cuando asumen un nuevo puesto. Con experiencia en Asia, América Latina y Europa, aporto rigor en la ejecución de la búsqueda, inteligencia cultural y un enfoque práctico, centrado en las personas.",
+      "Las empresas y las firmas de búsqueda me piden llevar la asignación: el mercado, los candidatos, las conversaciones. Si la persona tiene que aterrizar en otro país o en otra cultura, puedo quedarme los primeros meses. Esa práctica se hizo en China, y después en Asia, América Latina y Europa.",
     credibility: [
       "Más de 20 años en búsqueda ejecutiva, desarrollo de liderazgo y negocios internacionales",
       "Experiencia en China, Asia, América Latina y Europa",
@@ -68,30 +68,30 @@ export const es: SiteCopy = {
     ],
     specialtiesLabel: "Especialidades principales",
     specialties:
-      "Búsqueda ejecutiva, entrega de búsqueda, mapeo de talento, integración ejecutiva, liderazgo intercultural",
+      "Búsqueda ejecutiva, conducción de la búsqueda, mapeo de talento, integración ejecutiva, liderazgo intercultural",
     languagesLabel: "Idiomas",
     languages:
-      "Español (nativo) • Inglés (profesional completo) • Francés (conversacional) • Chino mandarín (conversacional)",
+      "Español (nativo) • Inglés (dominio profesional) • Francés (conversacional) • Chino mandarín (conversacional)",
     supportTitle: "Cómo puedo apoyarle",
     supportNote:
-      "La búsqueda ejecutiva es la puerta de entrada comercial. El desarrollo de talento refuerza la integración y el impacto del liderazgo después de identificar o contratar al talento.",
+      "Casi todos los clientes empiezan con una búsqueda. El desarrollo de talento entra cuando la persona tiene que instalarse en el puesto.",
     services: [
       {
         key: "search",
-        title: "Búsqueda ejecutiva y entrega de búsqueda",
-        body: "Apoyo para asignaciones de nivel C, dirección y especialistas críticos: estrategia de búsqueda, mapeo de mercado, investigación de candidatos, acercamiento, evaluación preliminar y entrega integral del proyecto.",
+        title: "Búsqueda ejecutiva y conducción de la búsqueda",
+        body: "Puestos de nivel C, dirección y especialistas críticos: el brief, el mapa, el acercamiento, una primera evaluación y la conducción de la asignación.",
         cta: "Ver búsqueda ejecutiva",
       },
       {
         key: "collaboration",
         title: "Colaboración con firmas de búsqueda ejecutiva",
-        body: "Apoyo experimentado y confidencial para firmas que necesitan capacidad de research, mapeo de talento, engagement de candidatos, apoyo en evaluación o entrega de proyectos en mandatos senior y complejos.",
+        body: "Capacidad confidencial para firmas de búsqueda: investigación, mapeo, conversaciones con candidatos, evaluación, o conducción de un mandato senior.",
         cta: "Trabajar juntos",
       },
       {
         key: "talent",
         title: "Integración ejecutiva y desarrollo de talento",
-        body: "Apoyo puntual para onboarding ejecutivo, liderazgo intercultural, coaching, evaluaciones, alineación de equipos y experiencias de desarrollo facilitadas.",
+        body: "Después de la decisión: onboarding, liderazgo intercultural, coaching, evaluaciones y trabajo con el equipo.",
         cta: "Ver desarrollo de talento",
       },
     ],
@@ -99,11 +99,11 @@ export const es: SiteCopy = {
     practiceTitle: "Las decisiones de talento definen los resultados del negocio.",
     practice: [
       "El nombramiento correcto puede acelerar un negocio. El incorrecto puede generar costo evitable, disrupción y pérdida de impulso. Acompaño a organizaciones y firmas de búsqueda en asignaciones senior y complejas, con experiencia de search, lectura de mercado, evaluación de candidatos y perspectiva intercultural.",
-      "Mi trabajo se sostiene en la discreción, el criterio y una comprensión clara del lado humano del desempeño —desde identificar al líder adecuado hasta acompañar una integración exitosa después de la contratación.",
+      "El trabajo depende de la discreción y del criterio. Puedo seguir desde la lista corta hasta los primeros meses, cuando la asignación lo pide.",
     ],
     calloutTitle: "Del nombramiento a un buen inicio",
     callout:
-      "La perspectiva intercultural y la integración ejecutiva acompañan la búsqueda. Ayudo a organizaciones y a socios de search a conectar la decisión de contratación con lo que un líder necesita en los primeros meses: alineación con stakeholders, cultura y un camino claro de impacto temprano.",
+      "La búsqueda y el arranque en el puesto son el mismo problema. Conecto la decisión de contratación con los primeros meses: con quién tiene que alinearse el líder, y qué le va a exigir la cultura.",
     tabs: [
       {
         id: "approach",
@@ -120,7 +120,7 @@ export const es: SiteCopy = {
           },
           {
             title: "Lo que ocurre después de la oferta",
-            body: "Una comprensión práctica de la transición ejecutiva, la cultura, el comportamiento de liderazgo y la integración del equipo.",
+            body: "Lo que la transición le pide a un líder: la cultura, y el equipo al que llega.",
           },
           {
             title: "Modalidad flexible",
@@ -177,13 +177,13 @@ export const es: SiteCopy = {
         role: "Cofundadora, consultora ejecutiva y facilitadora",
         dates: "2016 – actualidad",
         place: "NextStep Services Limited • Shanghái, China y México",
-        body: "Consultoría independiente en búsqueda ejecutiva, desarrollo de talento y contextos internacionales de liderazgo. Apoyo a organizaciones y socios de search en asignaciones senior, integración y aprendizaje facilitado.",
+        body: "Trabajo independiente en búsqueda ejecutiva, desarrollo de talento y liderazgo internacional. Asignaciones senior, integración y aprendizaje facilitado para organizaciones y firmas de búsqueda.",
       },
       {
         role: "Socia asociada",
         dates: "2025 – actualidad",
         place: "OPNRGame • Hong Kong y LatAm",
-        body: "Facilita confianza, transparencia activa y liderazgo de alto desempeño entre equipos mediante experiencias de aprendizaje corporativo gamificadas, con base en neurociencia.",
+        body: "Trabajo asociado sobre confianza y liderazgo entre equipos, con aprendizaje corporativo gamificado y base en neurociencia.",
       },
       {
         role: "Fundadora y directora",
@@ -195,7 +195,7 @@ export const es: SiteCopy = {
         role: "Directora general – oficina de Shanghái",
         dates: "2004 – 2013",
         place: "AIMS International – Human Capital Partners China",
-        body: "Lideró la búsqueda ejecutiva en Gran China, con colocaciones de líderes de nivel C y directores en sectores industriales, de logística, manufactura y bienes de consumo.",
+        body: "Dirigí la búsqueda ejecutiva desde la oficina de Shanghái. Colocaciones de nivel C y de dirección en industria, logística, manufactura y bienes de consumo en Gran China.",
       },
     ],
     sectorsTitle: "Experiencia en entornos de negocio complejos",
@@ -208,10 +208,10 @@ export const es: SiteCopy = {
   },
   search: {
     eyebrow: "Práctica principal",
-    title: "Búsqueda ejecutiva y entrega de búsqueda",
-    lede: "Apoyo práctico y riguroso para contrataciones senior, complejas y críticas para el negocio.",
+    title: "Búsqueda ejecutiva y conducción de la búsqueda",
+    lede: "Apoyo directo para contrataciones senior, complejas y críticas para el negocio.",
     intro:
-      "La búsqueda ejecutiva no consiste solo en identificar perfiles calificados. Exige una comprensión clara del reto de negocio, el contexto de liderazgo, el mercado, el grupo de candidatos y las condiciones para un éxito de largo plazo. Acompaño a empresas y a socios de search a traducir una necesidad crítica de contratación en un proceso de búsqueda eficaz y bien gestionado.",
+      "Una búsqueda senior empieza por el problema de negocio, luego el mercado y quién podría hacer el puesto. Llevo ese proceso para empresas y para firmas de búsqueda, y puedo quedarme para lo que el nuevo líder necesita si va a durar.",
     supportTitle: "Qué apoyo",
     support: [
       "Búsquedas de liderazgo de nivel C, dirección y funciones senior",
@@ -238,8 +238,8 @@ export const es: SiteCopy = {
         body: "Me acerco de forma profesional y confidencial, con una comprensión clara de la oportunidad.",
       },
       {
-        title: "Evaluar el ajuste más allá del CV",
-        body: "Considero la experiencia relevante, los comportamientos de liderazgo, la motivación, el contexto cultural y la preparación para la asignación.",
+        title: "Leer el ajuste",
+        body: "Veo la experiencia relevante, cómo dirige la persona, y si este contexto es uno al que puede entrar.",
       },
       {
         title: "Acompañar la transición",
@@ -247,25 +247,25 @@ export const es: SiteCopy = {
       },
     ],
     environments:
-      "Mi trayectoria incluye asignaciones ejecutivas y de liderazgo en entornos industriales, de manufactura, automotriz, logística, cadena de suministro, bienes de consumo y negocios internacionales. Me siento particularmente cómoda donde hace falta coordinación transfronteriza, lectura del mercado local y gestión de stakeholders senior.",
+      "Mi trayectoria incluye asignaciones ejecutivas y de liderazgo en entornos industriales, de manufactura, automotriz, logística, cadena de suministro, bienes de consumo y negocios internacionales. Me siento particularmente cómoda donde hace falta coordinación transfronteriza, lectura del mercado local y trato con interlocutores senior.",
     ctaTitle: "Conversar sobre una asignación de búsqueda",
     ctaBody:
       "Comparta el puesto, la ubicación, el contexto de negocio y el nivel de apoyo que necesita. Responderé para ver si soy la persona adecuada para la asignación.",
   },
   collaboration: {
     eyebrow: "Para firmas de búsqueda ejecutiva",
-    title: "Una socia experimentada para la entrega de búsqueda ejecutiva",
+    title: "Una socia con experiencia para conducir la búsqueda",
     lede: "Apoyo flexible y confidencial para firmas que trabajan asignaciones senior, complejas o internacionales.",
     intro:
-      "Colaboro con firmas de búsqueda ejecutiva que necesitan capacidad confiable, perspectiva local o intercultural, o apoyo experimentado en etapas clave de una asignación. Habiendo liderado y entregado búsqueda ejecutiva en mercados internacionales, entiendo la importancia de la calidad, el ritmo, la discreción y una experiencia de cliente consistente.",
+      "Trabajo con firmas que necesitan capacidad extra, una lectura local, o a alguien senior en parte del mandato. He llevado búsquedas en mercados internacionales. La discreción no se negocia, y el ritmo tiene que ser uno que el cliente pueda sentir.",
     supportTitle: "Apoyo de colaboración",
     support: [
       "Research de empresas objetivo y mapeo de talento",
       "Identificación de candidatos y desarrollo de long list",
-      "Acercamiento y engagement de candidatos",
+      "Acercamiento a candidatos",
       "Inteligencia de mercado y perspectiva de mercado local",
       "Entrevistas preliminares y apoyo en evaluación",
-      "Coordinación de proyecto y apoyo en la entrega de la búsqueda",
+      "Coordinación de proyecto y apoyo en la conducción de la búsqueda",
       "Apoyo para México, América Latina y asignaciones transfronterizas",
       "Integración ejecutiva, evaluación o apoyo intercultural cuando es relevante para el mandato",
     ],
@@ -275,7 +275,7 @@ export const es: SiteCopy = {
       "Respeto por acuerdos de no solicitación y protocolos del proyecto",
       "Comunicación clara, colaboración ágil y entregables definidos",
       "Un enfoque que protege la relación y la marca de la firma socia",
-      "Apoyo flexible: desde un workstream de research hasta una entrega más amplia del proyecto",
+      "Apoyo flexible: desde un tramo definido de research hasta una parte más amplia de la asignación",
     ],
     ctaTitle: "Explorar una colaboración",
     ctaBody:
@@ -286,16 +286,16 @@ export const es: SiteCopy = {
     title: "Integración ejecutiva y desarrollo de talento",
     lede: "Apoyo de desarrollo enfocado para que líderes y equipos construyan alineación, capacidad y confianza en entornos de cambio o multiculturales.",
     intro:
-      "Las decisiones de talento no terminan cuando un candidato acepta la oferta. Los primeros meses en el puesto, la calidad de las relaciones y la capacidad de navegar la cultura pueden definir si un nombramiento entrega el valor esperado. Ofrezco apoyo de desarrollo puntual para personas, líderes y equipos cuando es relevante para el contexto de negocio.",
+      "Firmada la oferta, el nombramiento todavía tiene que funcionar. Los primeros meses deciden una parte grande de eso: las relaciones, y si la persona puede leer la cultura. Tomo el trabajo de desarrollo cuando pertenece al mismo mandato.",
     areasTitle: "Áreas de apoyo",
     services: [
       {
         title: "Integración ejecutiva y onboarding",
-        body: "Acompañamiento para líderes que entran a un nuevo puesto, un nuevo mercado o una nueva cultura organizacional, con atención a la alineación de stakeholders, el contexto cultural y las prioridades de impacto temprano.",
+        body: "Acompañamiento para líderes que entran a un nuevo puesto, un nuevo mercado o una nueva cultura organizacional, con atención a con quién hay que alinearse, el contexto cultural y las prioridades de los primeros meses.",
       },
       {
         title: "Coaching intercultural",
-        body: "Coaching individual para líderes que trabajan entre culturas, se relocalizan, gestionan stakeholders multiculturales o adaptan su liderazgo a un contexto nuevo.",
+        body: "Coaching individual para líderes que trabajan entre culturas, se mudan de país, tratan con interlocutores de varias culturas, o ajustan su forma de dirigir a un contexto nuevo.",
       },
       {
         title: "Evaluaciones",
@@ -316,27 +316,27 @@ export const es: SiteCopy = {
     ],
     engagementTitle: "Cómo funciona el trabajo",
     engagement:
-      "Estos servicios se diseñan alrededor de la necesidad de la organización, no de una plantilla fija. Puedo trabajar directamente con un cliente o como facilitadora, coach o consultora asociada a través de socios de aprendizaje y desarrollo de confianza.",
+      "Armo el trabajo según lo que la organización necesita. Puedo trabajar directamente con un cliente, o como facilitadora, coach o consultora asociada, a través de socios de aprendizaje de confianza.",
     ctaTitle: "Explorar apoyo de desarrollo de talento",
   },
   about: {
     eyebrow: "Portafolio ejecutivo",
     title: "Acerca de Ana Ramos-Prudhommeaux",
-    lede: "Búsqueda ejecutiva, desarrollo de liderazgo y experiencia intercultural construidos en más de dos décadas de trabajo internacional.",
+    lede: "Búsqueda ejecutiva y trabajo de liderazgo, a partir de más de veinte años de asignaciones internacionales.",
     intro: [
-      "Soy consultora independiente en la intersección de la búsqueda ejecutiva, el desarrollo de liderazgo y los negocios internacionales. Mi trabajo se informa en más de 20 años de experiencia acompañando a organizaciones, líderes y decisiones de talento en China, Asia, América Latina y Europa.",
-      "Al inicio de mi carrera tuve responsabilidades de liderazgo en búsqueda ejecutiva en Gran China y, después, fundé y dirigí una práctica de consultoría al servicio de multinacionales en Asia. Hoy, desde mi práctica independiente y redes de socios seleccionadas, apoyo asignaciones de búsqueda, iniciativas de talento, coaching y experiencias de aprendizaje facilitado para organizaciones que navegan crecimiento, cambio y complejidad intercultural.",
+      "Soy consultora independiente. La búsqueda es el centro de la práctica. El desarrollo de liderazgo está al lado. Los años fueron en China, y después en Asia, América Latina y Europa.",
+      "Lideré búsqueda ejecutiva en Gran China, y después fundé una práctica de consultoría para multinacionales en Asia. Hoy tomo asignaciones de búsqueda, coaching y aprendizaje facilitado, también a través de unas pocas redes de socios, cuando una organización enfrenta crecimiento, un cambio, o una contratación transfronteriza.",
     ],
     snapshotTitle: "Recorrido",
     snapshot: [
-      "Liderazgo y entrega de búsqueda ejecutiva en Gran China, incluidas asignaciones de nivel C y dirección.",
+      "Liderazgo y conducción de búsqueda ejecutiva en Gran China, incluidas asignaciones de nivel C y dirección.",
       "Fundadora y directora de una práctica de consultoría enfocada en búsqueda ejecutiva, facilitación de liderazgo e integración ejecutiva para multinacionales en Asia-Pacífico.",
       "Consultoría independiente actual en búsqueda ejecutiva, desarrollo de talento y contextos internacionales de liderazgo.",
       "Colaboración con socios globales de desarrollo de talento y aprendizaje como formadora, coach y facilitadora.",
     ],
     expertiseTitle: "Áreas de experiencia",
     expertise: [
-      "Búsqueda ejecutiva y entrega de roles complejos",
+      "Búsqueda ejecutiva y conducción de puestos complejos",
       "Mapeo de talento, research y evaluación de candidatos",
       "Onboarding ejecutivo e integración de liderazgo",
       "Liderazgo intercultural y colaboración entre culturas",
@@ -345,13 +345,13 @@ export const es: SiteCopy = {
     ],
     internationalTitle: "Perspectiva internacional",
     international:
-      "Después de vivir y trabajar muchos años en China, y de colaborar en mercados internacionales, aporto una perspectiva práctica sobre cómo la cultura influye en el liderazgo, la confianza, la comunicación, la toma de decisiones y la integración del talento. Esa perspectiva sostiene tanto el trabajo de búsqueda como el de desarrollo, en especial cuando las organizaciones operan a través de fronteras.",
+      "Viví y trabajé en China muchos años, y sigo trabajando en varios mercados. La cultura cambia cómo la gente confía, cómo decide, y cómo recibe a un líder nuevo. Eso importa en una búsqueda, y otra vez en los primeros meses, sobre todo cuando la empresa opera entre países.",
     ctaTitle: "Conversemos sobre cómo puedo ayudar",
   },
   contact: {
     eyebrow: "Colaborar y conectar",
     title: "Empecemos por el contexto del negocio.",
-    lede: "Si trabaja en una búsqueda senior, busca apoyo de entrega o explora necesidades de desarrollo de talento, comparta algunos datos. Responderé de forma personal y confidencial.",
+    lede: "Si trabaja en una búsqueda senior, busca apoyo para conducirla, o tiene una necesidad de desarrollo de talento, comparta algunos datos. Responderé en persona, y de forma confidencial.",
     fields: {
       name: "Nombre",
       company: "Empresa",
@@ -429,12 +429,12 @@ export const es: SiteCopy = {
     search: {
       title: "Consultora de búsqueda ejecutiva | Ana Ramos",
       description:
-        "Apoyo para búsquedas senior y complejas: entrega, mapeo de talento, research de candidatos, acercamiento y evaluación.",
+        "Apoyo para búsquedas senior y complejas: conducción, mapeo de talento, research de candidatos, acercamiento y evaluación.",
     },
     collaboration: {
-      title: "Research y entrega de búsqueda ejecutiva | Ana Ramos",
+      title: "Research y conducción de búsqueda ejecutiva | Ana Ramos",
       description:
-        "Research confidencial, mapeo, engagement de candidatos y apoyo de entrega para firmas de búsqueda ejecutiva y asignaciones complejas.",
+        "Research confidencial, mapeo, acercamiento a candidatos y apoyo para conducir la búsqueda, para firmas y asignaciones complejas.",
     },
     talent: {
       title: "Integración ejecutiva y desarrollo de talento | Ana Ramos",
