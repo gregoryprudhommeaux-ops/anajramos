@@ -1,6 +1,6 @@
 export const profile = {
   fullName: "Ana Ramos-Prudhommeaux",
-  email: "ana@nextstep-workshops.com",
+  email: "ana@nextstep-services.com",
   inquiryEmail: "ana.ramos.cn@gmail.com",
   linkedinUrl: "https://www.linkedin.com/in/anajramos",
   linkedinHandle: "/in/anajramos",

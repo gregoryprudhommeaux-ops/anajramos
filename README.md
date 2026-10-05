@@ -24,7 +24,7 @@ Ouvrir [http://127.0.0.1:43123](http://127.0.0.1:43123).
 - `/privacy`
 - équivalents sous `/es`, `/cn` et `/fr`
 
-Le formulaire envoie la demande à `ana.ramos.cn@gmail.com`. La carte de contact publique affiche toujours `ana@nextstep-workshops.com`.
+Le formulaire envoie la demande à `ana.ramos.cn@gmail.com`. La carte de contact publique affiche `ana@nextstep-services.com`.
 
 ## Dépôt et domaine
 

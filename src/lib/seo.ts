@@ -1,5 +1,6 @@
 import { getCopy } from "@/content";
 import type { SeoKey } from "@/content/types";
+import { profile } from "@/lib/profile";
 import { localeMeta, routes, SITE_URL, type Locale } from "@/lib/routes";
 import type { Metadata } from "next";
 
@@ -39,7 +40,7 @@ export function personJsonLd(locale: Locale) {
     alternateName: "Ana Ramos",
     jobTitle: jobTitle(locale),
     url: `${SITE_URL}${routes[locale].home}`,
-    email: "ana@nextstep-workshops.com",
+    email: profile.email,
     address: {
       "@type": "PostalAddress",
       addressLocality: "Guadalajara",
