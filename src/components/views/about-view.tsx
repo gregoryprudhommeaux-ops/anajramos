@@ -1,3 +1,4 @@
+import { Portrait } from "@/components/portrait";
 import { SiteFrame } from "@/components/site-frame";
 import { CreamPanel, PageHero, WhiteCard } from "@/components/ui";
 import { getCopy } from "@/content";
@@ -15,6 +16,10 @@ export function AboutView({ locale }: { locale: Locale }) {
       <PageHero eyebrow={page.eyebrow} title={page.title} lede={page.lede} />
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
         <div className="space-y-6">
+          <Portrait
+            sizes="(min-width: 1024px) 320px, 100vw"
+            className="aspect-square w-full rounded-2xl object-cover shadow-sm ring-1 ring-black/5"
+          />
           <div className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
             <h2 className="mb-4 border-b border-gray-100 pb-3 font-serif text-lg font-bold text-brand-dark-blue">
               {home.overviewTitle}

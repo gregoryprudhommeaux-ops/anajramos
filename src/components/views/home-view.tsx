@@ -1,4 +1,5 @@
 import { ContactCards } from "@/components/contact-cards";
+import { Portrait } from "@/components/portrait";
 import { PracticeTabs } from "@/components/practice-tabs";
 import { SiteFrame } from "@/components/site-frame";
 import { CreamPanel, DarkPanel, Eyebrow, WhiteCard } from "@/components/ui";
@@ -37,23 +38,16 @@ export function HomeView({ locale }: { locale: Locale }) {
       />
 
       <DarkPanel className="mb-8 p-8 sm:p-12">
-        <div className="max-w-4xl">
+        <div className="grid items-center gap-8 lg:grid-cols-[minmax(0,1fr)_18rem] lg:gap-12">
+          <div className="order-2 lg:order-1">
           <Eyebrow>{home.eyebrow}</Eyebrow>
-          <div className="mb-5 flex items-center gap-4">
-            <span
-              className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-brand-gold/70 bg-brand-light-blue font-serif text-xl font-semibold text-brand-gold sm:h-16 sm:w-16 sm:text-2xl"
-              aria-hidden
-            >
-              AR
-            </span>
-            <p className="font-serif text-xl leading-tight font-light tracking-tight text-white sm:text-2xl">
-              {profile.fullName}
-            </p>
-          </div>
-          <h1 className="mb-6 max-w-4xl font-serif text-3xl leading-snug font-light tracking-tight sm:text-4xl lg:text-5xl">
+          <p className="mb-5 font-serif text-xl leading-tight font-light tracking-tight text-white sm:text-2xl">
+            {profile.fullName}
+          </p>
+          <h1 className="mb-6 font-serif text-3xl leading-snug font-light tracking-tight sm:text-4xl lg:text-5xl">
             {home.headline}
           </h1>
-          <p className="max-w-4xl text-sm leading-relaxed font-light text-gray-300 sm:text-base">
+          <p className="text-sm leading-relaxed font-light text-gray-300 sm:text-base">
             {home.supporting}
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -70,6 +64,12 @@ export function HomeView({ locale }: { locale: Locale }) {
               {copy.ctas.collaboration}
             </Link>
           </div>
+          </div>
+          <Portrait
+            priority
+            sizes="(min-width: 1024px) 288px, 224px"
+            className="order-1 mx-auto aspect-square w-48 rounded-2xl object-cover shadow-lg ring-1 ring-white/20 sm:w-56 lg:order-2 lg:w-full"
+          />
         </div>
         <div className="mt-8 grid gap-4 border-t border-white/10 pt-6 sm:grid-cols-3">
           {home.credibility.map((item) => (

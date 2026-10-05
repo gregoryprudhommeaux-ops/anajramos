@@ -1,5 +1,6 @@
 "use client";
 
+import { Portrait } from "@/components/portrait";
 import { getCopy } from "@/content";
 import { localeMeta, localeOrder, pathForLocale, routes, type Locale } from "@/lib/routes";
 import Link from "next/link";
@@ -24,9 +25,11 @@ export function SiteHeader({ locale }: { locale: Locale }) {
       <div className="mx-auto max-w-6xl">
         <div className="flex items-center justify-between gap-4">
           <Link href={path.home} className="flex items-center gap-3" onClick={close}>
-            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-dark-blue font-serif text-lg font-bold text-white">
-              AR
-            </span>
+            <Portrait
+              alt=""
+              sizes="40px"
+              className="h-10 w-10 rounded-full object-cover object-[center_22%]"
+            />
             <span>
               <span className="block text-sm font-semibold tracking-wide text-gray-800 sm:text-base">
                 ANA RAMOS
