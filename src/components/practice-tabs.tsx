@@ -14,7 +14,7 @@ export function PracticeTabs({ tabs }: { tabs: Tab[] }) {
 
   return (
     <div className="border-t border-gray-100 pt-6">
-      <div className="no-print flex overflow-x-auto border-b border-gray-200">
+      <div className="no-print -mx-1 flex snap-x gap-1 overflow-x-auto border-b border-gray-200 px-1">
         {tabs.map((tab) => {
           const selected = tab.id === active;
           return (

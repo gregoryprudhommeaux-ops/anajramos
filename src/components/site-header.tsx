@@ -23,18 +23,18 @@ export function SiteHeader({ locale }: { locale: Locale }) {
   return (
     <header className="no-print sticky top-0 z-40 border-b border-gray-100 bg-white/80 px-4 py-4 backdrop-blur-md sm:px-6">
       <div className="mx-auto max-w-6xl">
-        <div className="flex items-center justify-between gap-4">
-          <Link href={path.home} className="flex items-center gap-3" onClick={close}>
+        <div className="flex items-center justify-between gap-3">
+          <Link href={path.home} className="flex min-w-0 items-center gap-2.5" onClick={close}>
             <Portrait
               alt=""
               sizes="40px"
-              className="h-10 w-10 rounded-full object-cover object-[center_22%]"
+              className="h-10 w-10 shrink-0 rounded-full object-cover object-[center_22%]"
             />
-            <span>
+            <span className="min-w-0">
               <span className="block text-sm font-semibold tracking-wide text-gray-800 sm:text-base">
                 ANA RAMOS
               </span>
-              <span className="block text-xs font-medium tracking-wider text-brand-slate-blue">
+              <span className="block text-[10px] leading-snug font-medium tracking-normal text-brand-slate-blue sm:text-xs sm:tracking-wider">
                 {copy.brandDescriptor}
               </span>
             </span>
@@ -58,11 +58,20 @@ export function SiteHeader({ locale }: { locale: Locale }) {
 
           <button
             type="button"
-            className="rounded-full border border-brand-dark-blue/20 px-4 py-2 text-xs font-bold text-brand-dark-blue lg:hidden"
+            className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-brand-dark-blue/20 text-brand-dark-blue lg:hidden"
             aria-expanded={open}
+            aria-label={open ? copy.menuClose : copy.menuOpen}
             onClick={() => setOpen((value) => !value)}
           >
-            {open ? copy.menuClose : copy.menuOpen}
+            {open ? (
+              <svg viewBox="0 0 24 24" className="h-4 w-4" aria-hidden>
+                <path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+              </svg>
+            ) : (
+              <svg viewBox="0 0 24 24" className="h-4 w-4" aria-hidden>
+                <path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+              </svg>
+            )}
           </button>
         </div>
 
@@ -91,7 +100,7 @@ export function SiteHeader({ locale }: { locale: Locale }) {
               href={link.href}
               onClick={close}
               aria-current={link.active ? "page" : undefined}
-              className={`text-sm font-semibold ${
+              className={`py-1 text-sm font-semibold ${
                 link.active ? "text-brand-dark-blue" : "text-brand-slate-blue"
               }`}
             >

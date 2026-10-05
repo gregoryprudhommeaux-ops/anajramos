@@ -27,7 +27,7 @@ export function CreamPanel({
 }) {
   return (
     <div
-      className={`relative overflow-hidden rounded-3xl border border-brand-gold/30 bg-brand-cream p-8 sm:p-12 ${className}`}
+      className={`relative overflow-hidden rounded-3xl border border-brand-gold/30 bg-brand-cream p-5 sm:p-10 lg:p-12 ${className}`}
     >
       <div className="pointer-events-none absolute -top-16 -right-16 h-48 w-48 rounded-full bg-brand-gold/10" />
       <div className="relative z-10">{children}</div>
@@ -51,7 +51,7 @@ export function WhiteCard({
 
 export function Eyebrow({ children }: { children: ReactNode }) {
   return (
-    <span className="mb-6 inline-block rounded-full bg-white/10 px-3 py-1 text-xs font-bold tracking-widest text-brand-gold uppercase">
+    <span className="mb-4 inline-block max-w-full rounded-2xl bg-white/10 px-3 py-1.5 text-[10px] leading-snug font-bold tracking-wide text-brand-gold uppercase sm:mb-6 sm:rounded-full sm:py-1 sm:text-xs sm:tracking-widest">
       {children}
     </span>
   );
@@ -67,7 +67,7 @@ export function PageHero({
   lede: string;
 }) {
   return (
-    <DarkPanel className="mb-8 p-8 sm:p-12">
+    <DarkPanel className="mb-8 p-5 sm:p-10 lg:p-12">
       <Eyebrow>{eyebrow}</Eyebrow>
       <h1 className="mb-4 max-w-4xl font-serif text-3xl leading-tight font-light tracking-tight sm:text-5xl">
         {title}

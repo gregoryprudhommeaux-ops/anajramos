@@ -37,7 +37,7 @@ export function HomeView({ locale }: { locale: Locale }) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd(locale)) }}
       />
 
-      <DarkPanel className="mb-8 p-8 sm:p-12">
+      <DarkPanel className="mb-8 p-5 sm:p-10 lg:p-12">
         <div className="grid items-center gap-8 lg:grid-cols-[minmax(0,1fr)_18rem] lg:gap-12">
           <div className="order-2 lg:order-1">
           <Eyebrow>{home.eyebrow}</Eyebrow>
@@ -50,16 +50,16 @@ export function HomeView({ locale }: { locale: Locale }) {
           <p className="text-sm leading-relaxed font-light text-gray-300 sm:text-base">
             {home.supporting}
           </p>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+          <div className="mt-6 flex flex-col gap-3 sm:mt-8 sm:flex-row">
             <Link
               href={path.contact}
-              className="rounded-full bg-white px-5 py-2.5 text-center text-xs font-semibold text-brand-dark-blue shadow-md transition-all hover:bg-brand-gold hover:text-brand-dark-blue"
+              className="rounded-full bg-white px-5 py-3 text-center text-xs font-semibold text-brand-dark-blue shadow-md transition-all hover:bg-brand-gold hover:text-brand-dark-blue sm:py-2.5"
             >
               {copy.ctas.discuss}
             </Link>
             <Link
               href={path.collaboration}
-              className="rounded-full border border-white/30 px-5 py-2.5 text-center text-xs font-bold text-white transition-all hover:bg-white/10"
+              className="rounded-full border border-white/30 px-5 py-3 text-center text-xs font-bold text-white transition-all hover:bg-white/10 sm:py-2.5"
             >
               {copy.ctas.collaboration}
             </Link>

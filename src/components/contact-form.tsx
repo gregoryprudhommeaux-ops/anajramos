@@ -88,7 +88,7 @@ export function ContactForm({ locale }: { locale: Locale }) {
   }
 
   const fieldClass =
-    "w-full rounded-xl border border-gray-200 bg-white px-3 py-2.5 text-sm text-brand-charcoal outline-none transition-colors focus:border-brand-slate-blue";
+    "w-full rounded-xl border border-gray-200 bg-white px-3 py-3 text-base text-brand-charcoal outline-none transition-colors focus:border-brand-slate-blue sm:py-2.5 sm:text-sm";
   const labelClass = "mb-1.5 block text-xs font-semibold tracking-wider text-brand-slate-blue uppercase";
 
   return (
@@ -195,7 +195,7 @@ export function ContactForm({ locale }: { locale: Locale }) {
       <button
         type="submit"
         disabled={pending}
-        className="mt-6 rounded-full bg-brand-light-blue px-5 py-2.5 text-xs font-semibold text-white shadow-md transition-all hover:bg-brand-dark-blue disabled:opacity-60"
+        className="mt-6 w-full rounded-full bg-brand-light-blue px-5 py-3 text-xs font-semibold text-white shadow-md transition-all hover:bg-brand-dark-blue disabled:opacity-60 sm:w-auto sm:py-2.5"
       >
         {pending ? copy.sending : copy.submit}
       </button>
