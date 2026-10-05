@@ -1,8 +1,29 @@
 import { SITE_URL } from "@/lib/routes";
 import type { Metadata, Viewport } from "next";
 import { Playfair_Display, Plus_Jakarta_Sans } from "next/font/google";
+import localFont from "next/font/local";
 import type { ReactNode } from "react";
 import "./globals.css";
+
+const notoSansSc = localFont({
+  src: [
+    { path: "../fonts/noto-sans-sc-400.woff2", weight: "400", style: "normal" },
+    { path: "../fonts/noto-sans-sc-700.woff2", weight: "700", style: "normal" },
+  ],
+  variable: "--font-noto-sans-sc",
+  display: "swap",
+  preload: false,
+});
+
+const notoSerifSc = localFont({
+  src: [
+    { path: "../fonts/noto-serif-sc-400.woff2", weight: "400", style: "normal" },
+    { path: "../fonts/noto-serif-sc-700.woff2", weight: "700", style: "normal" },
+  ],
+  variable: "--font-noto-serif-sc",
+  display: "swap",
+  preload: false,
+});
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -40,7 +61,10 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
-    <html lang="en" className={`${playfair.variable} ${jakarta.variable} h-full antialiased`}>
+    <html
+      lang="en"
+      className={`${playfair.variable} ${jakarta.variable} ${notoSansSc.variable} ${notoSerifSc.variable} h-full antialiased`}
+    >
       <body className="min-h-full bg-brand-cream font-sans text-brand-charcoal">{children}</body>
     </html>
   );

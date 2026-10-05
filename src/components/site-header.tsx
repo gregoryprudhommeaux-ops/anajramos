@@ -31,7 +31,7 @@ export function SiteHeader({ locale }: { locale: Locale }) {
               <span className="block text-sm font-semibold tracking-wide text-gray-800 sm:text-base">
                 ANA RAMOS
               </span>
-              <span className="block text-[10px] font-medium tracking-wider text-brand-slate-blue sm:text-xs">
+              <span className="block text-xs font-medium tracking-wider text-brand-slate-blue">
                 {copy.brandDescriptor}
               </span>
             </span>

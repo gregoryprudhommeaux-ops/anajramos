@@ -9,6 +9,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-brand-gold: #c5a880;
+  --color-brand-gold-ink: #8b6939;
   --color-brand-dark-blue: #0f1e36;
   --color-brand-light-blue: #1e3557;
   --color-brand-slate-blue: #5c7394;
@@ -27,12 +28,12 @@ body {
 }
 
 .font-cn {
-  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", "Noto Sans SC",
-    var(--font-jakarta), sans-serif;
+  font-family: var(--font-noto-sans-sc), "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", var(--font-jakarta),
+    sans-serif;
 }
 
 .font-cn .font-serif {
-  font-family: "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", "STSong", var(--font-playfair), Georgia,
+  font-family: var(--font-noto-serif-sc), "Songti SC", "Source Han Serif SC", "STSong", var(--font-playfair), Georgia,
     serif;
 }
 

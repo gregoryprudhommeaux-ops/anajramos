@@ -27,7 +27,7 @@ export function SearchView({ locale }: { locale: Locale }) {
           {page.steps.map((step, index) => (
             <div key={step.title} className="relative">
               <span className="absolute top-1.5 -left-[31px] flex h-4 w-4 items-center justify-center rounded-full border-4 border-white bg-brand-gold shadow-md" />
-              <p className="text-[11px] font-bold tracking-wider text-brand-gold uppercase">0{index + 1}</p>
+              <p className="text-xs font-bold tracking-wider text-brand-gold-ink uppercase">0{index + 1}</p>
               <h3 className="text-sm font-bold text-gray-800 sm:text-base">{step.title}</h3>
               <p className="mt-1 text-xs leading-relaxed text-gray-600">{step.body}</p>
             </div>

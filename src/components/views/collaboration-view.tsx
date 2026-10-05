@@ -28,7 +28,7 @@ export function CollaborationView({ locale }: { locale: Locale }) {
           <ul className="space-y-3">
             {page.principles.map((item) => (
               <li key={item} className="flex items-start gap-2 text-xs leading-relaxed text-gray-700">
-                <span className="text-brand-gold">✔</span>
+                <span className="text-brand-gold-ink">✔</span>
                 <span>{item}</span>
               </li>
             ))}

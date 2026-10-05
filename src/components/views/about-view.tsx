@@ -19,9 +19,9 @@ export function AboutView({ locale }: { locale: Locale }) {
             <h2 className="mb-4 border-b border-gray-100 pb-3 font-serif text-lg font-bold text-brand-dark-blue">
               {home.overviewTitle}
             </h2>
-            <p className="text-xs tracking-wider text-gray-400 uppercase">{home.languagesLabel}</p>
+            <p className="text-xs tracking-wider text-brand-slate-blue uppercase">{home.languagesLabel}</p>
             <p className="mt-1 text-sm font-medium text-gray-800">{home.languages}</p>
-            <p className="mt-4 text-xs tracking-wider text-gray-400 uppercase">{home.educationLabel}</p>
+            <p className="mt-4 text-xs tracking-wider text-brand-slate-blue uppercase">{home.educationLabel}</p>
             <ul className="mt-2 space-y-2">
               {home.education.map((item) => (
                 <li key={item.title}>

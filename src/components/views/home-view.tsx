@@ -7,6 +7,17 @@ import { profile } from "@/lib/profile";
 import { routes, type Locale } from "@/lib/routes";
 import { personJsonLd } from "@/lib/seo";
 import Link from "next/link";
+import type { ReactNode } from "react";
+
+function OverviewIcon({ children }: { children: ReactNode }) {
+  return (
+    <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-cream text-brand-gold-ink">
+      <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden>
+        {children}
+      </svg>
+    </span>
+  );
+}
 
 export function HomeView({ locale }: { locale: Locale }) {
   const copy = getCopy(locale);
@@ -28,12 +39,20 @@ export function HomeView({ locale }: { locale: Locale }) {
       <DarkPanel className="mb-8 p-8 sm:p-12">
         <div className="max-w-4xl">
           <Eyebrow>{home.eyebrow}</Eyebrow>
-          <h1 className="mb-4 font-serif text-3xl leading-tight font-light tracking-tight sm:text-5xl lg:text-6xl">
-            {profile.fullName}
-          </h1>
-          <p className="mb-6 max-w-3xl text-lg leading-relaxed font-medium text-brand-ice-blue sm:text-xl">
+          <div className="mb-5 flex items-center gap-4">
+            <span
+              className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-brand-gold/70 bg-brand-light-blue font-serif text-xl font-semibold text-brand-gold sm:h-16 sm:w-16 sm:text-2xl"
+              aria-hidden
+            >
+              AR
+            </span>
+            <p className="font-serif text-xl leading-tight font-light tracking-tight text-white sm:text-2xl">
+              {profile.fullName}
+            </p>
+          </div>
+          <h1 className="mb-6 max-w-4xl font-serif text-3xl leading-snug font-light tracking-tight sm:text-4xl lg:text-5xl">
             {home.headline}
-          </p>
+          </h1>
           <p className="max-w-4xl text-sm leading-relaxed font-light text-gray-300 sm:text-base">
             {home.supporting}
           </p>
@@ -69,22 +88,24 @@ export function HomeView({ locale }: { locale: Locale }) {
             </h2>
             <ul className="space-y-4 text-sm">
               <li className="flex items-start gap-3">
-                <span className="mt-1 font-bold text-brand-gold" aria-hidden>
-                  🌍
-                </span>
+                <OverviewIcon>
+                  <circle cx="12" cy="12" r="8" />
+                  <path d="M4 12h16M12 4c2.4 2.6 2.4 10.8 0 16M12 4c-2.4 2.6-2.4 10.8 0 16" />
+                </OverviewIcon>
                 <div>
-                  <span className="block text-xs tracking-wider text-gray-400 uppercase">
+                  <span className="block text-xs tracking-wider text-brand-slate-blue uppercase">
                     {home.footprintLabel}
                   </span>
                   <span className="font-medium text-gray-800">{home.footprint}</span>
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <span className="mt-1 font-bold text-brand-gold" aria-hidden>
-                  🎓
-                </span>
+                <OverviewIcon>
+                  <path d="M3 10 12 6l9 4-9 4-9-4Z" />
+                  <path d="M7 12.2V16c1.8 1.2 7.2 1.2 10 0v-3.8" />
+                </OverviewIcon>
                 <div>
-                  <span className="block text-xs tracking-wider text-gray-400 uppercase">
+                  <span className="block text-xs tracking-wider text-brand-slate-blue uppercase">
                     {home.educationLabel}
                   </span>
                   {home.education.map((item, index) => (
@@ -96,22 +117,26 @@ export function HomeView({ locale }: { locale: Locale }) {
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <span className="mt-1 font-bold text-brand-gold" aria-hidden>
-                  🤝
-                </span>
+                <OverviewIcon>
+                  <circle cx="8" cy="12" r="2.4" />
+                  <circle cx="16" cy="12" r="2.4" />
+                  <path d="M10.4 12h3.2" />
+                </OverviewIcon>
                 <div>
-                  <span className="block text-xs tracking-wider text-gray-400 uppercase">
+                  <span className="block text-xs tracking-wider text-brand-slate-blue uppercase">
                     {home.specialtiesLabel}
                   </span>
                   <span className="font-medium text-gray-800">{home.specialties}</span>
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <span className="mt-1 font-bold text-brand-gold" aria-hidden>
-                  🗣️
-                </span>
+                <OverviewIcon>
+                  <path d="M5 7h8M9 7c.2 3.2-1.2 5.4-4 6.6" />
+                  <path d="M6.5 10.2h4.2" />
+                  <path d="M14 18.2 16.6 11l2.6 7.2M15.2 15.8h2.8" />
+                </OverviewIcon>
                 <div>
-                  <span className="block text-xs tracking-wider text-gray-400 uppercase">
+                  <span className="block text-xs tracking-wider text-brand-slate-blue uppercase">
                     {home.languagesLabel}
                   </span>
                   <span className="font-medium text-gray-800">{home.languages}</span>
@@ -124,7 +149,7 @@ export function HomeView({ locale }: { locale: Locale }) {
             <h2 className="mb-4 border-b border-gray-100 pb-3 font-serif text-lg font-bold text-brand-dark-blue">
               {home.supportTitle}
             </h2>
-            <p className="mb-4 text-[11px] leading-relaxed text-gray-500">{home.supportNote}</p>
+            <p className="mb-4 text-xs leading-relaxed text-gray-600">{home.supportNote}</p>
             <div className="space-y-2">
               {home.services.map((service) => (
                 <Link
@@ -137,8 +162,8 @@ export function HomeView({ locale }: { locale: Locale }) {
                   }`}
                 >
                   <span className="block text-xs font-bold text-brand-dark-blue">{service.title}</span>
-                  <span className="mt-1 block text-[11px] leading-relaxed text-gray-600">{service.body}</span>
-                  <span className="mt-2 block text-[11px] font-semibold text-brand-light-blue">{service.cta}</span>
+                  <span className="mt-1 block text-xs leading-relaxed text-gray-600">{service.body}</span>
+                  <span className="mt-2 block text-xs font-semibold text-brand-light-blue">{service.cta}</span>
                 </Link>
               ))}
             </div>
@@ -216,7 +241,7 @@ export function HomeView({ locale }: { locale: Locale }) {
             {copy.ctas.discuss}
           </Link>
           <ContactCards locale={locale} />
-          <p className="pt-4 text-xs text-gray-400">{home.based}</p>
+          <p className="pt-4 text-xs text-brand-slate-blue">{home.based}</p>
         </div>
       </CreamPanel>
     </SiteFrame>
