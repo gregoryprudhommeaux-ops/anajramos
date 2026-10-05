@@ -1,4 +1,5 @@
 import type { InquiryKey } from "@/content/types";
+import { profile } from "@/lib/profile";
 
 const inquiries = new Set<InquiryKey>(["search", "collaboration", "talent", "other"]);
 
@@ -48,6 +49,40 @@ export async function POST(request: Request) {
     return Response.json({ ok: false, errors }, { status: 400 });
   }
 
-  void timing;
-  return Response.json({ ok: true, delivery: "local-preview" });
+  const labels: Record<InquiryKey, string> = {
+    search: "Executive Search",
+    collaboration: "Search Firm Collaboration",
+    talent: "Talent Development",
+    other: "Other",
+  };
+  const inquiryLabel = labels[inquiry as InquiryKey];
+
+  try {
+    const delivery = await fetch(`https://formsubmit.co/ajax/${profile.inquiryEmail}`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify({
+        name,
+        email,
+        company,
+        location,
+        inquiry: inquiryLabel,
+        timing: timing || "Not specified",
+        message: description,
+        _subject: `Website inquiry — ${inquiryLabel} — ${company}`,
+        _template: "table",
+        _captcha: "false",
+        _replyto: email,
+      }),
+    });
+    const payload = (await delivery.json().catch(() => null)) as { success?: string | boolean; message?: string } | null;
+    const accepted = delivery.ok && String(payload?.success) !== "false";
+    if (!accepted) {
+      return Response.json({ ok: false, errors: { generic: "generic" } }, { status: 502 });
+    }
+  } catch {
+    return Response.json({ ok: false, errors: { generic: "generic" } }, { status: 502 });
+  }
+
+  return Response.json({ ok: true, delivery: "email" });
 }

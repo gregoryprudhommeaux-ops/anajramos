@@ -68,7 +68,7 @@ export function ContactForm({ locale }: { locale: Locale }) {
         <h2 className="font-serif text-2xl text-brand-dark-blue">{copy.successTitle}</h2>
         <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-gray-600">{copy.successBody}</p>
         <a
-          href={`mailto:${profile.email}`}
+          href={`mailto:${profile.inquiryEmail}`}
           className="mt-6 inline-flex rounded-full bg-brand-light-blue px-5 py-2.5 text-xs font-semibold text-white hover:bg-brand-dark-blue"
         >
           {copy.successDirect}

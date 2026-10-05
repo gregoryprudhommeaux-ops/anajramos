@@ -391,9 +391,8 @@ export const en: SiteCopy = {
       consent: "Please confirm the confidentiality note to continue.",
       generic: "The inquiry could not be confirmed. Please try again, or write directly by email.",
     },
-    successTitle: "Your inquiry is confirmed on this screen.",
-    successBody:
-      "This form does not send email yet. Write directly and Ana will respond personally.",
+    successTitle: "Your inquiry has been sent.",
+    successBody: "Ana will read it and reply personally.",
     successDirect: "Write to Ana",
     another: "Send another inquiry",
   },
@@ -403,7 +402,7 @@ export const en: SiteCopy = {
     sections: [
       {
         heading: "Who receives an inquiry",
-        body: "Ana Ramos-Prudhommeaux is an independent consultant based in Guadalajara, Mexico. Inquiries are intended for her at ana@nextstep-workshops.com.",
+        body: "Ana Ramos-Prudhommeaux is an independent consultant based in Guadalajara, Mexico. Form inquiries are sent to ana.ramos.cn@gmail.com.",
       },
       {
         heading: "What the form asks for",
@@ -415,7 +414,7 @@ export const en: SiteCopy = {
       },
       {
         heading: "Reaching Ana",
-        body: "The form checks your message on this page. It does not forward it to an inbox yet. Write to ana@nextstep-workshops.com for a reply.",
+        body: "The form sends your message to ana.ramos.cn@gmail.com so Ana can reply. You can also write to that address directly.",
       },
       {
         heading: "Cookies and links",

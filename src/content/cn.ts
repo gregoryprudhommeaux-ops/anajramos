@@ -327,8 +327,8 @@ export const cn: SiteCopy = {
       consent: "请确认保密说明后再继续。",
       generic: "咨询未能确认。请重试，或直接发邮件。",
     },
-    successTitle: "您的咨询已在此页确认。",
-    successBody: "此表单目前不会发送电子邮件。请直接写信，Ana 会亲自回复。",
+    successTitle: "您的咨询已发送。",
+    successBody: "Ana 会阅读并亲自回复。",
     successDirect: "写信给 Ana",
     another: "再发送一条咨询",
   },
@@ -338,7 +338,7 @@ export const cn: SiteCopy = {
     sections: [
       {
         heading: "谁会收到咨询",
-        body: "Ana Ramos-Prudhommeaux 是常驻墨西哥瓜达拉哈拉的独立顾问。咨询请发送至 ana@nextstep-workshops.com。",
+        body: "Ana Ramos-Prudhommeaux 是常驻墨西哥瓜达拉哈拉的独立顾问。表单咨询会发送至 ana.ramos.cn@gmail.com。",
       },
       {
         heading: "表单会询问什么",
@@ -350,7 +350,7 @@ export const cn: SiteCopy = {
       },
       {
         heading: "如何联系 Ana",
-        body: "表单会在本页检查您的信息。它目前不会把内容转发到邮箱。如需回复，请写信至 ana@nextstep-workshops.com。",
+        body: "表单会把您的信息发送到 ana.ramos.cn@gmail.com，以便 Ana 回复。您也可以直接写信到这个地址。",
       },
       {
         heading: "Cookie 与链接",

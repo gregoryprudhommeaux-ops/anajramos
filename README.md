@@ -22,13 +22,15 @@ Ouvrir [http://127.0.0.1:43123](http://127.0.0.1:43123).
 - `/about`
 - `/contact`
 - `/privacy`
-- équivalents espagnols sous `/es`
+- équivalents sous `/es`, `/cn` et `/fr`
 
-Le formulaire de contact valide la demande et confirme à l’écran. Sur cette version locale, il n’envoie pas encore d’e-mail. Le contact direct reste `ana@nextstep-workshops.com`.
+Le formulaire envoie la demande à `ana.ramos.cn@gmail.com`. La carte de contact publique affiche toujours `ana@nextstep-workshops.com`.
 
-## Domaine
+## Dépôt et domaine
 
-Préparé pour [anajramos.com](https://anajramos.com), sur le compte Vercel `nextstep-services`. Cette étape reste en local : le domaine n’est pas encore branché.
+Code : [github.com/gregoryprudhommeaux-ops/anajramos](https://github.com/gregoryprudhommeaux-ops/anajramos).
+
+Le site est prévu pour [anajramos.com](https://anajramos.com), projet Vercel `anajramos` sur l’équipe `nextstep-services`.
 
 ## Choix de publication
 

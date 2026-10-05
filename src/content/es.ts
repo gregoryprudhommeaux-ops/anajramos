@@ -391,9 +391,8 @@ export const es: SiteCopy = {
       consent: "Confirme la nota de confidencialidad para continuar.",
       generic: "No se pudo confirmar la consulta. Intente de nuevo o escriba directamente por correo.",
     },
-    successTitle: "Su consulta quedó confirmada en esta pantalla.",
-    successBody:
-      "Este formulario todavía no envía correo. Escriba directamente y Ana responderá en persona.",
+    successTitle: "Su consulta ha sido enviada.",
+    successBody: "Ana la leerá y responderá en persona.",
     successDirect: "Escribir a Ana",
     another: "Enviar otra consulta",
   },
@@ -403,7 +402,7 @@ export const es: SiteCopy = {
     sections: [
       {
         heading: "Quién recibe una consulta",
-        body: "Ana Ramos-Prudhommeaux es consultora independiente con base en Guadalajara, México. Las consultas están destinadas a ella en ana@nextstep-workshops.com.",
+        body: "Ana Ramos-Prudhommeaux es consultora independiente con base en Guadalajara, México. Las consultas del formulario se envían a ana.ramos.cn@gmail.com.",
       },
       {
         heading: "Qué pide el formulario",
@@ -415,7 +414,7 @@ export const es: SiteCopy = {
       },
       {
         heading: "Cómo contactar a Ana",
-        body: "El formulario revisa su mensaje en esta página. Todavía no lo reenvía a un buzón. Escriba a ana@nextstep-workshops.com para recibir respuesta.",
+        body: "El formulario envía su mensaje a ana.ramos.cn@gmail.com para que Ana pueda responder. También puede escribir directamente a esa dirección.",
       },
       {
         heading: "Cookies y enlaces",

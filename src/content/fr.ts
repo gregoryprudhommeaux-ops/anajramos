@@ -391,9 +391,8 @@ export const fr: SiteCopy = {
       consent: "Confirmez la note de confidentialité pour continuer.",
       generic: "La demande n’a pas pu être confirmée. Réessayez, ou écrivez directement.",
     },
-    successTitle: "Votre demande est confirmée sur cet écran.",
-    successBody:
-      "Ce formulaire n’envoie pas encore d’e-mail. Écrivez directement et Ana répondra personnellement.",
+    successTitle: "Votre demande a été envoyée.",
+    successBody: "Ana la lira et répondra personnellement.",
     successDirect: "Écrire à Ana",
     another: "Envoyer une autre demande",
   },
@@ -403,7 +402,7 @@ export const fr: SiteCopy = {
     sections: [
       {
         heading: "Qui reçoit une demande",
-        body: "Ana Ramos-Prudhommeaux est consultante indépendante, basée à Guadalajara, au Mexique. Les demandes lui sont destinées à ana@nextstep-workshops.com.",
+        body: "Ana Ramos-Prudhommeaux est consultante indépendante, basée à Guadalajara, au Mexique. Les demandes du formulaire sont envoyées à ana.ramos.cn@gmail.com.",
       },
       {
         heading: "Ce que le formulaire demande",
@@ -415,7 +414,7 @@ export const fr: SiteCopy = {
       },
       {
         heading: "Joindre Ana",
-        body: "Le formulaire vérifie votre message sur cette page. Il ne le transmet pas encore à une boîte mail. Écrivez à ana@nextstep-workshops.com pour une réponse.",
+        body: "Le formulaire envoie votre message à ana.ramos.cn@gmail.com pour qu’Ana puisse répondre. Vous pouvez aussi écrire directement à cette adresse.",
       },
       {
         heading: "Cookies et liens",
