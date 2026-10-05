@@ -1,5 +1,6 @@
 import { ImageResponse } from "next/og";
 
+export const alt = "AR — Ana Ramos";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -11,21 +12,61 @@ export default function OpenGraphImage() {
           width: "100%",
           height: "100%",
           display: "flex",
-          flexDirection: "column",
+          alignItems: "center",
           justifyContent: "center",
           background: "#0F1E36",
-          color: "white",
-          padding: "80px",
         }}
       >
-        <div style={{ display: "flex", color: "#C5A880", fontSize: 28, letterSpacing: 6 }}>
-          ANA RAMOS
-        </div>
-        <div style={{ display: "flex", fontSize: 64, marginTop: 24, lineHeight: 1.15, maxWidth: 900 }}>
-          Executive Search & Talent Development
-        </div>
-        <div style={{ display: "flex", color: "#8FA3C1", fontSize: 28, marginTop: 28 }}>
-          anajramos.com
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              width: 340,
+              height: 340,
+              borderRadius: 170,
+              background: "#0F1E36",
+              border: "10px solid #C5A880",
+              color: "#C5A880",
+              fontSize: 148,
+              fontWeight: 700,
+              letterSpacing: -2,
+              lineHeight: 1,
+            }}
+          >
+            AR
+          </div>
+          <div
+            style={{
+              display: "flex",
+              marginTop: 28,
+              color: "#C5A880",
+              fontSize: 28,
+              fontWeight: 700,
+              letterSpacing: 8,
+            }}
+          >
+            ANA RAMOS
+          </div>
+          <div
+            style={{
+              display: "flex",
+              marginTop: 10,
+              color: "#8FA3C1",
+              fontSize: 22,
+              letterSpacing: 1,
+            }}
+          >
+            anajramos.com
+          </div>
         </div>
       </div>
     ),
