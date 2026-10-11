@@ -46,6 +46,12 @@ export const metadata: Metadata = {
   description:
     "Executive search, talent mapping and leadership integration support for organizations and search firms in Mexico, Latin America and international markets.",
   applicationName: "Ana Ramos",
+  appleWebApp: {
+    title: "Ana Ramos",
+  },
+  icons: {
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+  },
   authors: [{ name: "Ana Ramos-Prudhommeaux" }],
   openGraph: {
     siteName: "Ana Ramos",
